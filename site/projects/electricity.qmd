@@ -1,0 +1,24 @@
+---
+title: "Electricity"
+description: "Understanding power use in one household."
+---
+
+## The everyday decision
+
+What can a household's electricity measurements reveal about when and how
+energy is used?
+
+## The evidence
+
+The [UCI household power dataset](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption)
+records one home in France at one-minute intervals from December 2006 to
+November 2010. It includes missing readings and submetering, but not electricity
+prices. Results about this household should not be presented as population-wide
+or current bill estimates.
+
+## Status
+
+Published entries will identify their data cutoff, aggregation rules and exact
+analysis revision.
+
+[Return to the weekly archive](../archive.qmd)

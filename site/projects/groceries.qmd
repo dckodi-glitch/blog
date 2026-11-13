@@ -1,0 +1,27 @@
+---
+title: "Groceries"
+description: "Reading a fixed vintage of grocery price levels."
+---
+
+## The everyday decision
+
+How should we interpret the prices of bread, eggs and milk when looking back
+at a grocery budget?
+
+## The evidence
+
+Three ALFRED workbooks contain monthly U.S. city average prices for January
+2018 through May 2023, using a June 13, 2023 vintage. Their files were created
+in November 2026. Bread is priced per pound, eggs per dozen, and milk per
+gallon, so raw levels are not interchangeable.
+
+Average price series describe observed price levels; the source recommends
+using CPI indices rather than these averages to measure price change. A fixed
+vintage is not a stream of new weekly releases.
+
+## Status
+
+Published entries will link their exact analysis revision and explain their
+observation period and limitations.
+
+[Return to the weekly archive](../archive.qmd)

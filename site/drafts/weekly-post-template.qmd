@@ -1,0 +1,45 @@
+---
+title: "Replace with a reviewed question"
+description: "Replace with a concise, evidence-supported description."
+date: 2099-01-01
+publication-date: 2099-01-01
+draft: true
+---
+
+This template is excluded from the site. Replace all placeholders only after
+the analysis and publication decision; never invent dates or results.
+
+## The question
+
+State one question and the featured project.
+
+## Dates and provenance
+
+- **Coverage date:** the editorial Wednesday, which is not the work date.
+- **Observation period:** actual first and last observations used.
+- **Data vintage or cutoff:** the source snapshot and information cutoff.
+- **Analysis execution date:** the actual date, with timezone if a timestamp.
+- **Publication date:** the actual date, also recorded in front matter.
+- **Input data revision or hashes:** exact identifiers.
+- **Analysis code revision:** link directly to the code at a verified commit,
+  for example `https://github.com/OWNER/REPOSITORY/blob/FULL_COMMIT_SHA/PATH`.
+  If not verified, leave this draft unpublished rather than inventing a link.
+- **Evidence type:** verified historical work or newly executed retrospective
+  analysis, with a source for any historical claim.
+
+## What the evidence shows
+
+Use a reviewed result and a stable, curated figure under `site/figures/`.
+Provide meaningful alternative text and a caption with units and source.
+
+```markdown
+![Describe the actual finding and relevant context.](../figures/FILE.svg)
+```
+
+Give tables informative column headers and units. Plain fenced code such as
+` ```python ` is syntax-highlighted without executing it.
+
+## Limits
+
+Explain missing data, uncertainty, disclosure review and what the result cannot
+support. Preserve original source data and notebooks.

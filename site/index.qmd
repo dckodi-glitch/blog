@@ -1,0 +1,57 @@
+---
+title: "Everyday, examined"
+title-block-style: none
+---
+
+<!-- THESIS: An evidence-led reading room, not a dashboard of invented results.
+OWN-WORLD: Deep blue ink, a pale blue field, warm white reading surfaces,
+and ruled links. STORY: Four ordinary decisions become questions with limits.
+FIRST VIEWPORT: A large, left-aligned promise, an honest status note, then a
+four-row project index. FORM: An annotated field guide; seed 3cd6b0ad. -->
+
+::: {.home-intro}
+
+# Better questions for everyday decisions.
+
+Prices at the store. Electricity at home. A fantasy lineup. Where to learn.
+This is a journal for looking at ordinary choices through data, one careful
+question at a time.
+
+[Explore the projects](#projects){.primary-link}
+
+::: {.status-note}
+**A starting point, not a record of finished work.** Entries appear only after
+the analysis and its evidence have been reviewed.
+:::
+
+:::
+
+## Four questions to explore {#projects}
+
+::: {.project-index}
+
+### [What do grocery prices show?](projects/groceries.qmd)
+
+Bread, eggs and milk in a fixed historical price vintage.
+
+### [How is electricity used at home?](projects/electricity.qmd)
+
+Minute-by-minute measurements from one household, not an electricity bill.
+
+### [What can a fantasy matchup tell us?](projects/fantasy.qmd)
+
+Projections, outcomes and the gaps that limit a comparison.
+
+### [What can learning data actually tell us?](projects/learning.qmd)
+
+Course and assessment records, with privacy and context in view.
+
+:::
+
+::: {.home-closing}
+## Follow the evidence
+
+Each eventual entry will separate its coverage date from when the work was
+actually done and published. See the [weekly archive](archive.qmd) or read
+[how the work is documented](methodology.qmd).
+:::

@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: python3 check-published-posts.py
+  render:
+    - index.qmd
+    - archive.qmd
+    - methodology.qmd
+    - projects/*.qmd
+    - posts/*.qmd
+    - "!drafts/**"
+
+execute:
+  enabled: false
+
+website:
+  title: "Everyday, examined"
+  site-url: https://dckodi-glitch.github.io/blog/
+  search: false
+  navbar:
+    left:
+      - text: Projects
+        menu:
+          - text: Groceries
+            href: projects/groceries.qmd
+          - text: Electricity
+            href: projects/electricity.qmd
+          - text: Fantasy football
+            href: projects/fantasy.qmd
+          - text: Learning analytics
+            href: projects/learning.qmd
+      - text: Weekly archive
+        href: archive.qmd
+      - text: Methodology
+        href: methodology.qmd
+  page-footer:
+    left: "Everyday, examined"
+    right: "Questions first. Evidence always."
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    highlight-style: github

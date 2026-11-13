@@ -1,0 +1,206 @@
+:root {
+  --ink: #172f46;
+  --muted: #3e566b;
+  --field: #e7f2f5;
+  --paper: #fff;
+  --rule: #a7bec9;
+  --accent: #005b75;
+}
+
+body {
+  color: var(--ink);
+  background: #f7fafb;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+
+.navbar {
+  background: var(--ink) !important;
+  padding-block: .9rem;
+}
+
+.navbar-brand, .navbar .nav-link {
+  color: #fff !important;
+}
+
+.navbar-brand {
+  font-weight: 750;
+  letter-spacing: -.025em;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus-visible {
+  color: #bde8ed !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+a {
+  color: #005a73;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+a:hover {
+  color: #003b4e;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #d88c1b;
+  outline-offset: 3px;
+}
+
+#quarto-content {
+  padding-bottom: 4rem;
+}
+
+main.content {
+  max-width: 77rem;
+}
+
+main.content > p, main.content > ul, main.content > ol,
+main.content > h2, main.content > h3 {
+  max-width: 70ch;
+}
+
+h1, h2, h3 {
+  color: var(--ink);
+  letter-spacing: -.035em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+h1 {
+  font-weight: 780;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+}
+
+.home-intro {
+  background: var(--field);
+  padding: clamp(2rem, 5vw, 4.5rem);
+  margin: 1rem 0 4rem;
+}
+
+body:has(.home-intro) #title-block-header {
+  display: none;
+}
+
+.home-intro h1 {
+  max-width: 13ch;
+  margin: 0 0 1.5rem;
+  font-size: clamp(3rem, 7vw, 5.75rem);
+}
+
+.home-intro > p {
+  max-width: 57ch;
+  font-size: clamp(1.08rem, 1.6vw, 1.3rem);
+}
+
+.primary-link {
+  display: inline-block;
+  background: var(--ink);
+  color: #fff;
+  padding: .8rem 1.2rem;
+  margin-top: .75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary-link:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.status-note {
+  border-top: 1px solid var(--rule);
+  max-width: 60ch;
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  color: var(--muted);
+}
+
+.project-index {
+  border-top: 1px solid var(--rule);
+}
+
+.project-index h3 {
+  margin: 0;
+  padding-top: 1.45rem;
+  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+}
+
+.project-index h3 a {
+  color: var(--ink);
+}
+
+.project-index p {
+  border-bottom: 1px solid var(--rule);
+  padding: .5rem 0 1.45rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.home-closing, .archive-empty {
+  background: var(--field);
+  padding: 1.5rem 2rem;
+  margin-top: 3rem;
+}
+
+.home-closing h2 {
+  margin-top: .4rem;
+}
+
+body:has(.quarto-post) .archive-empty {
+  display: none;
+}
+
+.quarto-title-block .quarto-title-banner,
+.quarto-title-block .quarto-title {
+  max-width: 70ch;
+}
+
+table {
+  width: 100%;
+}
+
+figcaption, .figure-caption {
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.nav-footer {
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .home-intro {
+    margin-inline: -1rem;
+    padding: 2rem 1.25rem;
+  }
+
+  .home-intro h1 {
+    font-size: clamp(2.8rem, 12vw, 4rem);
+  }
+
+  .status-note {
+    margin-top: 2.5rem;
+  }
+
+  .home-closing, .archive-empty {
+    padding: 1.25rem;
+  }
+}
