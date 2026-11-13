@@ -1,0 +1,26 @@
+---
+title: "Weekly archive"
+description: "Published analysis, in coverage-date order."
+listing:
+  contents: "posts/*.qmd"
+  type: default
+  sort: "date asc"
+  fields: [date, title, description]
+  date-format: "MMMM D, YYYY"
+---
+
+The archive will list **published posts** in coverage-date order. A coverage
+date is an editorial label, not a claim about when analysis was performed.
+
+::: {.archive-empty}
+No weekly posts have been published yet. Proposed and unassigned coverage
+slots are not posts; future drafts stay off this site.
+:::
+
+## Planned coverage
+
+The editorial sequence is groceries from June 2023 to May 2024, electricity
+from June 2024 to September 2025, fantasy football from October 2025 to January
+2026, and learning analytics from February 2026 to June 2027. These are
+coverage periods, not verified dates of work. A separate portfolio summary is
+planned for June 2027.

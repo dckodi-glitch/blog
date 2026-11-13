@@ -1,0 +1,50 @@
+---
+title: "How the work is documented"
+description: "Dates, evidence and limits behind the journal."
+---
+
+## A date is not a single thing
+
+Each post will distinguish the **coverage date** assigned to the story, the
+period the observations describe, the data vintage or cutoff, the actual
+analysis date, the actual publication date and the precise code revision.
+Unknown values stay unknown.
+
+Coverage dates begin on June 14, 2023 and fall on Wednesdays through June 9,
+2027. They organize the archive; they do not establish that work happened on
+those dates. A final portfolio summary is planned separately for June 2027.
+
+## Evidence before conclusions
+
+Verified historical work will be linked to dated evidence. A newly executed
+retrospective analysis will say when it was performed and what older data it
+used. Future work remains excluded from the published site; it cannot contain
+invented outcomes. Sources, limitations and the exact analysis code revision
+will accompany each published result. No analysis revisions are linked yet
+because none have been verified for a published post.
+
+For example, the grocery workbooks contain a June 13, 2023 ALFRED vintage
+covering January 2018 through May 2023, but the workbook files were created in
+November 2026. That distinction matters when describing any retrospective
+analysis.
+
+## Small, reproducible steps
+
+A weekly milestone is planned around approximately two hours **in total**,
+including analysis, focused validation and writing. This is a budget, not a
+claim about hours already worked. Not every coverage slot has a distinct
+milestone, and unassigned slots will not become filler posts.
+
+Published figures will be curated, stable exports rather than figures
+regenerated from changing notebooks during the site build. Figures will include
+captions and meaningful alternative text; result tables will have clear
+headings and units.
+
+## Boundaries that matter
+
+The electricity data describes one household, not a population or a current
+bill. The original 2025 Week 8 fantasy matchup analysis is excluded because
+its defense input duplicates the previous week's file; missing slot/wide data
+will not be reconstructed. Learning results will use privacy-reviewed
+aggregates only. Learner-level records and clickstream data are not published
+or required.

@@ -1,0 +1,27 @@
+---
+title: "Learning analytics"
+description: "Exploring course data without losing sight of privacy."
+---
+
+## The everyday decision
+
+What can available course and assessment records tell us about learning,
+and what can they not tell us?
+
+## The evidence
+
+The [Open University Learning Analytics Dataset](https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset)
+includes course presentations and assessment records from 2013–2014. Course
+resource metadata is not evidence of individual engagement. A separate
+platform dataset has unresolved collection-method and provenance questions,
+so it cannot establish which platform is best.
+
+The site will publish privacy-reviewed aggregates only. Learner-level records
+and clickstream data are outside the published site.
+
+## Status
+
+Published entries will identify their observation window, limits and exact
+analysis revision.
+
+[Return to the weekly archive](../archive.qmd)

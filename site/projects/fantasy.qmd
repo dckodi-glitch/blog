@@ -1,0 +1,23 @@
+---
+title: "Fantasy football"
+description: "A careful look at matchup projections and outcomes."
+---
+
+## The everyday decision
+
+How useful is the available evidence when considering a receiver matchup?
+
+## The evidence
+
+The source files pair previous-week inputs with later outcomes. That
+relationship, the input season and availability times must be checked before
+making a comparison. The original 2025 Week 8 matchup analysis is excluded:
+its defense file duplicates the prior week's file. Missing slot/wide inputs
+will not be reconstructed.
+
+## Status
+
+Published analyses will explain their cutoff, exclusions and exact code
+revision.
+
+[Return to the weekly archive](../archive.qmd)
