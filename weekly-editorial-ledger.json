@@ -14,7 +14,7 @@
     {
       "coverage_date": "2023-06-14",
       "featured_project": "groceries",
-      "slot_status": "proposed_milestone",
+      "slot_status": "retrospective_executed",
       "milestone_id": "g01",
       "proposed_question": "What do these three files represent?",
       "small_milestone": "Inspect workbook metadata and document series IDs, units, vintage and file creation separately.",
@@ -25,6 +25,8 @@
       ],
       "prerequisites": [],
       "observation_period": "2018-01 through 2023-05",
+      "source_vintage": "2023-06-13",
+      "input_data_revision": "62abf163ab9ffdacacd05e56c3071dd9c8d003e8",
       "historical_cutoff": "ALFRED vintage 2023-06-13; latest observation month 2023-05",
       "expected_evidence": "Metadata table with three series and provenance.",
       "estimated_minutes": {
@@ -33,11 +35,14 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
-      "publication_status": "excluded_draft; no post created",
-      "actual_execution_date": null,
+      "evidence_status": "new retrospective analysis executed; verified exports and analysis metadata available",
+      "publication_status": "excluded_draft; prepared locally, not published",
+      "actual_execution_date": "2026-11-13T16:03:07-08:00",
       "actual_publication_date": null,
-      "analysis_code_revision": null,
+      "analysis_code_revision": "e555df70bd62f971386674f82b83f5c5f7c183b0",
+      "analysis_source_sha256": "d34d80e8c2cf199683a75e8dc1c7cdc4387e2d64d2deed41ad41b83683ec9e7c",
+      "analysis_code_url": "https://github.com/dckodi-glitch/grocery-changes/blob/e555df70bd62f971386674f82b83f5c5f7c183b0/analyze.py",
+      "prepared_post": "site/drafts/grocery-2023-06-14.qmd",
       "unavailable_data_or_release_uncertainty": "The workbook files were created 2026-11-13; historic release timing and prior analysis are not established. Average prices are not CPI price-change indices."
     },
     {

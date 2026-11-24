@@ -13,6 +13,9 @@ project:
 execute:
   enabled: false
 
+language:
+  title-block-published: "Coverage date"
+
 website:
   title: "Everyday, examined"
   site-url: https://dckodi-glitch.github.io/blog/
