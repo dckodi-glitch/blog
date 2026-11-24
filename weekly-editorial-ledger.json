@@ -1369,7 +1369,7 @@
     {
       "coverage_date": "2024-06-05",
       "featured_project": "electricity",
-      "slot_status": "proposed_milestone",
+      "slot_status": "retrospective_executed",
       "milestone_id": "e01",
       "proposed_question": "What is in the household archive?",
       "small_milestone": "Inventory member, time range, schema, units and data gaps.",
@@ -1386,11 +1386,15 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
-      "publication_status": "excluded_draft; no post created",
-      "actual_execution_date": null,
+      "evidence_status": "retrospective analysis executed; verified daily exports and quality metadata available",
+      "publication_status": "excluded_draft; prepared locally, not published",
+      "actual_execution_date": "2026-11-14T14:30:55.191723-08:00",
       "actual_publication_date": null,
-      "analysis_code_revision": null,
+      "analysis_code_revision": "16e57642f3bb5fc21a62bc84f48550f83cbd9081",
+      "analysis_code_url": "https://github.com/dckodi-glitch/electricity-changes/blob/16e57642f3bb5fc21a62bc84f48550f83cbd9081/analysis/household_power.py",
+      "analysis_source_sha256": "ae46f2abe167f4d5d14395829ee3e542c7af04bb84397fbd46cbf45149a5cd37",
+      "input_data_revision": "929ed43064487e09fe69af58f5c43d5971fa14a4",
+      "prepared_post": "site/drafts/electricity-2024-06-05.qmd",
       "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
     },
     {
