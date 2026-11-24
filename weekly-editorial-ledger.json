@@ -199,7 +199,7 @@
     {
       "coverage_date": "2023-07-26",
       "featured_project": "groceries",
-      "slot_status": "proposed_milestone",
+      "slot_status": "retrospective_executed",
       "milestone_id": "g07",
       "proposed_question": "Which months have the largest within-series level differences?",
       "small_milestone": "Calculate descriptive month-to-month level differences separately and check missing and initial months.",
@@ -220,11 +220,18 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
-      "publication_status": "excluded_draft; no post created",
-      "actual_execution_date": null,
+      "evidence_status": "new retrospective analysis executed using the workbook audit; planned g02 remains uncompleted",
+      "publication_status": "excluded_draft; prepared locally, not published",
+      "actual_execution_date": "2026-11-24T12:13:50-08:00",
       "actual_publication_date": null,
-      "analysis_code_revision": null,
+      "analysis_code_revision": "f092b3a782ecc2da931e0f0576684338511997bb",
+      "analysis_code_url": "https://github.com/dckodi-glitch/grocery-changes/blob/f092b3a782ecc2da931e0f0576684338511997bb/monthly_differences.py",
+      "analysis_source_sha256": "c5b31818a4918d9dd252f0f3ba106b9b398a1cf3a43092207edc36b6576b34fa",
+      "audit_source_sha256": "d34d80e8c2cf199683a75e8dc1c7cdc4387e2d64d2deed41ad41b83683ec9e7c",
+      "input_data_revision": "62abf163ab9ffdacacd05e56c3071dd9c8d003e8",
+      "source_vintage": "2023-06-13",
+      "prepared_post": "site/drafts/grocery-2023-07-26.qmd",
+      "analysis_revision_availability": "Committed after execution; source hashes match the execution metadata. The analysis pull request was open when checked.",
       "unavailable_data_or_release_uncertainty": "The workbook files were created 2026-11-13; historic release timing and prior analysis are not established. Average prices are not CPI price-change indices."
     },
     {
