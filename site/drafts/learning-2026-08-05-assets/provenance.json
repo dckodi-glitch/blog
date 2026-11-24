@@ -1,0 +1,74 @@
+{
+  "project": "OULAD submission timing retrospective",
+  "coverage_date": "2026-08-05",
+  "coverage_date_meaning": "Portfolio topic label only, not an execution or publication date.",
+  "observation_boundary": "2013B, 2013J, 2014B and 2014J presentations; day zero is each presentation's start.",
+  "historical_cutoff": null,
+  "source": {
+    "name": "Open University Learning Analytics dataset",
+    "donated": "2015-12-20",
+    "url": "https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset",
+    "doi": "https://doi.org/10.24432/C5KK69",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "local_download_date": null
+  },
+  "input_revisions": {
+    "diff_data/courses.csv": {
+      "git_commit": "9f2ff2d60ef4ffa09f3fa763ac000b7c9a512ab0",
+      "git_blob_at_commit": "72e18220e9d3a6b6fe0bff2b137ccc6efa42efca",
+      "working_file_git_blob": "72e18220e9d3a6b6fe0bff2b137ccc6efa42efca",
+      "sha256": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75"
+    },
+    "diff_data/studentInfo.csv": {
+      "git_commit": "9f2ff2d60ef4ffa09f3fa763ac000b7c9a512ab0",
+      "git_blob_at_commit": "5739c0845981ab478df8cc80164640d49d19ccf3",
+      "working_file_git_blob": "5739c0845981ab478df8cc80164640d49d19ccf3",
+      "sha256": "815fbc3e2de29f79900bc63f0345a35db62c9146afaa1d86e7107b8b3beffc60"
+    },
+    "diff_data/studentRegistration.csv": {
+      "git_commit": "9f2ff2d60ef4ffa09f3fa763ac000b7c9a512ab0",
+      "git_blob_at_commit": "7f9476b390d135e528d0652952613e2d3c0af60c",
+      "working_file_git_blob": "7f9476b390d135e528d0652952613e2d3c0af60c",
+      "sha256": "bbc87a0de1fe2a9ec6decce1ca6c1a02cf17b54ad3bdcc673fc6413b41c61d47"
+    },
+    "diff_data/assessments.csv": {
+      "git_commit": "9f2ff2d60ef4ffa09f3fa763ac000b7c9a512ab0",
+      "git_blob_at_commit": "52902072581177605413dc87475930b39de23388",
+      "working_file_git_blob": "52902072581177605413dc87475930b39de23388",
+      "sha256": "9ce92381e4a0ac457f8e251b2eb2c179ed51e023ab30d1d671a0268bd62316ba"
+    },
+    "diff_data/studentAssessment.csv": {
+      "git_commit": "9f2ff2d60ef4ffa09f3fa763ac000b7c9a512ab0",
+      "git_blob_at_commit": "a546257993120e2d72dcc0b9bd4c36e5a5afb48e",
+      "working_file_git_blob": "a546257993120e2d72dcc0b9bd4c36e5a5afb48e",
+      "sha256": "b1839e17618a5de36b6d189a242d3123f7939a56c8c9ccef0c17b9199c614a6b"
+    }
+  },
+  "analysis_base_commit": "9f2ff2d60ef4ffa09f3fa763ac000b7c9a512ab0",
+  "analysis_code_revisions": {
+    "oulad/timing.py": {
+      "working_file_git_blob": "ae0c4d5947637a8a451dc4a85ae1451c2053feba",
+      "sha256": "fc44d12f3632706f3a5eb0b4b7ca05484567d461c86d85e62bc8fe2850aaa448"
+    },
+    "oulad/analyze.py": {
+      "working_file_git_blob": "40350a025a6f222db6f73e283de13e080463baa0",
+      "sha256": "15f51eb8ee993090a0111f84b42e9bad701db5c7fb902d449f804c72742e0d7f"
+    }
+  },
+  "executed_at": "2026-11-24T21:25:57.550922+00:00",
+  "publication_date": null,
+  "methods": "Validate full enrollment and assessment keys, then partition submissions by relative submission day minus deadline; exclude banked records first, then missing deadlines and missing submission days. Scores are not used; missing scores remain included.",
+  "privacy": "Suppress positive cells with fewer than 10 records or distinct learners, plus a complementary positive cell when only one cell would be suppressed; the workflow exports no totals or other margins.",
+  "limitations": [
+    "Submission records are not unique people.",
+    "Banked submissions may come from an earlier presentation.",
+    "Timing is descriptive, not a causal explanation of outcomes.",
+    "No clickstream, prediction model, or cross-study joins."
+  ],
+  "outputs": [
+    "oulad/timing_output/submission_timing.csv",
+    "oulad/timing_output/submission_timing.svg",
+    "oulad/timing_output/provenance.json"
+  ]
+}

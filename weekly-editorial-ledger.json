@@ -4363,7 +4363,7 @@
     {
       "coverage_date": "2026-08-05",
       "featured_project": "learning analytics",
-      "slot_status": "proposed_milestone",
+      "slot_status": "retrospective_executed",
       "milestone_id": "l07",
       "proposed_question": "How do assessment submissions relate to due dates?",
       "small_milestone": "Summarize valid relative submission timing with clear censoring and aggregation rules.",
@@ -4375,7 +4375,7 @@
         "l06"
       ],
       "observation_period": "OULAD 2013B\u20132014J presentations; platform CSV observation dates and collection methodology unknown",
-      "historical_cutoff": "OULAD snapshot donated 2015-12-20; platform dataset version 1 modified 2025-12-13; prediction features restricted to declared relative-day cutoff",
+      "historical_cutoff": "OULAD snapshot donated 2015-12-20; no historical as-of cutoff applied to this descriptive analysis. The platform study is separate.",
       "expected_evidence": "Suppressed aggregate timing distribution.",
       "estimated_minutes": {
         "analysis": 60,
@@ -4383,11 +4383,16 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
-      "publication_status": "excluded_draft; no post created",
-      "actual_execution_date": null,
+      "evidence_status": "retrospective submission-timing analysis executed; planned l06 remains uncompleted",
+      "publication_status": "excluded_draft; prepared locally, not published",
+      "actual_execution_date": "2026-11-24T21:25:57.550922+00:00",
       "actual_publication_date": null,
       "analysis_code_revision": null,
+      "analysis_source_sha256": "fc44d12f3632706f3a5eb0b4b7ca05484567d461c86d85e62bc8fe2850aaa448",
+      "analysis_source_git_blob": "ae0c4d5947637a8a451dc4a85ae1451c2053feba",
+      "input_data_revision": "9f2ff2d60ef4ffa09f3fa763ac000b7c9a512ab0",
+      "prepared_post": "site/drafts/learning-2026-08-05.qmd",
+      "analysis_revision_availability": "Timing code uncommitted at execution; exact Git blob and SHA-256 recorded, but no commit permalink available.",
       "unavailable_data_or_release_uncertainty": "No learner clickstream is available or permitted. Platform source identity and methodology need verification. Keep learner-level records private; screen aggregate outputs for disclosure."
     },
     {
