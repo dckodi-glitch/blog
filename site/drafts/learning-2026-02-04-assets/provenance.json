@@ -1,0 +1,69 @@
+{
+  "project": "OULAD retrospective descriptive milestone",
+  "question": "How are course presentations and assessments structured, and how are final enrollment outcomes distributed?",
+  "observation_boundary": "2013B, 2013J, 2014B, 2014J presentations; day 0 is the start of the corresponding presentation, not a calendar date.",
+  "historical_cutoff": null,
+  "historical_cutoff_note": "No as-of prediction cutoff is applied; this is a retrospective of complete available records.",
+  "source": {
+    "name": "Open University Learning Analytics dataset",
+    "donated": "2015-12-20",
+    "source_url": "https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset",
+    "doi": "https://doi.org/10.24432/C5KK69",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "local_download_date": null
+  },
+  "input_revisions": {
+    "diff_data/courses.csv": {
+      "git_commit": "a51ba30520859201319ec9efc40142153fb68fc2",
+      "git_blob_at_commit": "72e18220e9d3a6b6fe0bff2b137ccc6efa42efca",
+      "working_file_git_blob": "72e18220e9d3a6b6fe0bff2b137ccc6efa42efca",
+      "sha256": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75"
+    },
+    "diff_data/studentInfo.csv": {
+      "git_commit": "a51ba30520859201319ec9efc40142153fb68fc2",
+      "git_blob_at_commit": "5739c0845981ab478df8cc80164640d49d19ccf3",
+      "working_file_git_blob": "5739c0845981ab478df8cc80164640d49d19ccf3",
+      "sha256": "815fbc3e2de29f79900bc63f0345a35db62c9146afaa1d86e7107b8b3beffc60"
+    },
+    "diff_data/studentRegistration.csv": {
+      "git_commit": "a51ba30520859201319ec9efc40142153fb68fc2",
+      "git_blob_at_commit": "7f9476b390d135e528d0652952613e2d3c0af60c",
+      "working_file_git_blob": "7f9476b390d135e528d0652952613e2d3c0af60c",
+      "sha256": "bbc87a0de1fe2a9ec6decce1ca6c1a02cf17b54ad3bdcc673fc6413b41c61d47"
+    },
+    "diff_data/assessments.csv": {
+      "git_commit": "a51ba30520859201319ec9efc40142153fb68fc2",
+      "git_blob_at_commit": "52902072581177605413dc87475930b39de23388",
+      "working_file_git_blob": "52902072581177605413dc87475930b39de23388",
+      "sha256": "9ce92381e4a0ac457f8e251b2eb2c179ed51e023ab30d1d671a0268bd62316ba"
+    },
+    "diff_data/studentAssessment.csv": {
+      "git_commit": "a51ba30520859201319ec9efc40142153fb68fc2",
+      "git_blob_at_commit": "a546257993120e2d72dcc0b9bd4c36e5a5afb48e",
+      "working_file_git_blob": "a546257993120e2d72dcc0b9bd4c36e5a5afb48e",
+      "sha256": "b1839e17618a5de36b6d189a242d3123f7939a56c8c9ccef0c17b9199c614a6b"
+    }
+  },
+  "analysis_revision": {
+    "git_base_commit": "a51ba30520859201319ec9efc40142153fb68fc2",
+    "file": "oulad/analyze.py",
+    "working_file_git_blob": "40350a025a6f222db6f73e283de13e080463baa0",
+    "sha256": "15f51eb8ee993090a0111f84b42e9bad701db5c7fb902d449f804c72742e0d7f"
+  },
+  "executed_at": "2026-11-23T06:33:35.647869+00:00",
+  "publication_date": null,
+  "methods": "Validate unique keys and referential integrity; join assessment definitions to submissions and then enrollments by full module/presentation/student key; count final results by enrollment; suppress small positive cells with complementary suppression.",
+  "limitations": [
+    "Retrospective descriptive counts, not causal platform comparisons.",
+    "No clickstream data or prediction model.",
+    "Records are enrollments, not unique people.",
+    "Source deadlines and scores have missing values; banked results can originate in previous presentations."
+  ],
+  "outputs": [
+    "oulad/output/final_results.csv",
+    "oulad/output/final_results.svg",
+    "oulad/output/data_quality.json",
+    "oulad/output/provenance.json"
+  ]
+}

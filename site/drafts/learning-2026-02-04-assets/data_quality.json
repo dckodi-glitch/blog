@@ -1,0 +1,634 @@
+{
+  "input_rows": {
+    "courses": 22,
+    "studentInfo": 32593,
+    "studentRegistration": 32593,
+    "assessments": 206,
+    "studentAssessment": 173912
+  },
+  "candidate_key_duplicate_counts": {
+    "courses": 0,
+    "studentInfo": 0,
+    "studentRegistration": 0,
+    "assessments": 0,
+    "studentAssessment": 0
+  },
+  "missing_values_by_column": {
+    "courses": {
+      "code_module": 0,
+      "code_presentation": 0,
+      "module_presentation_length": 0
+    },
+    "studentInfo": {
+      "code_module": 0,
+      "code_presentation": 0,
+      "learner_key": 0,
+      "gender": 0,
+      "region": 0,
+      "highest_education": 0,
+      "imd_band": 1111,
+      "age_band": 0,
+      "num_of_prev_attempts": 0,
+      "studied_credits": 0,
+      "disability": 0,
+      "final_result": 0
+    },
+    "studentRegistration": {
+      "code_module": 0,
+      "code_presentation": 0,
+      "learner_key": 0,
+      "date_registration": 45,
+      "date_unregistration": 22521
+    },
+    "assessments": {
+      "code_module": 0,
+      "code_presentation": 0,
+      "id_assessment": 0,
+      "assessment_type": 0,
+      "date": 11,
+      "weight": 0
+    },
+    "studentAssessment": {
+      "id_assessment": 0,
+      "learner_key": 0,
+      "date_submitted": 0,
+      "is_banked": 0,
+      "score": 173
+    }
+  },
+  "missing_marker": "empty string or ?",
+  "repeated_enrollment_students": 3538,
+  "enrollments_for_repeated_students": 7346,
+  "registration_result_disagreements": "suppressed",
+  "referential_integrity_errors": {
+    "studentInfo_missing_course": 0,
+    "studentRegistration_missing_course": 0,
+    "assessments_missing_course": 0,
+    "info_missing_registration": 0,
+    "registration_missing_info": 0,
+    "submission_missing_assessment": 0,
+    "submission_missing_enrollment": 0
+  },
+  "join_cardinality": {
+    "info_registration_inner_rows": 32593,
+    "submissions_to_assessment_inner_rows": 173912,
+    "submissions_to_assessment_and_enrollment_inner_rows": 173912
+  },
+  "course_and_assessment_structure": [
+    {
+      "module": "AAA",
+      "presentation": "2013J",
+      "length_days": 268,
+      "assessment_types": {
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 1,
+          "earliest_deadline_day": null,
+          "latest_deadline_day": null,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 19,
+          "latest_deadline_day": 215,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "AAA",
+      "presentation": "2014J",
+      "length_days": 269,
+      "assessment_types": {
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 1,
+          "earliest_deadline_day": null,
+          "latest_deadline_day": null,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 19,
+          "latest_deadline_day": 215,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "BBB",
+      "presentation": "2013B",
+      "length_days": 240,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 54,
+          "latest_deadline_day": 187,
+          "weight_sum_percent": 5.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 1,
+          "earliest_deadline_day": null,
+          "latest_deadline_day": null,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 19,
+          "latest_deadline_day": 187,
+          "weight_sum_percent": 95.0
+        }
+      }
+    },
+    {
+      "module": "BBB",
+      "presentation": "2013J",
+      "length_days": 268,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 54,
+          "latest_deadline_day": 208,
+          "weight_sum_percent": 5.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 1,
+          "earliest_deadline_day": null,
+          "latest_deadline_day": null,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 19,
+          "latest_deadline_day": 208,
+          "weight_sum_percent": 95.0
+        }
+      }
+    },
+    {
+      "module": "BBB",
+      "presentation": "2014B",
+      "length_days": 234,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 47,
+          "latest_deadline_day": 194,
+          "weight_sum_percent": 5.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 1,
+          "earliest_deadline_day": null,
+          "latest_deadline_day": null,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 12,
+          "latest_deadline_day": 194,
+          "weight_sum_percent": 95.0
+        }
+      }
+    },
+    {
+      "module": "BBB",
+      "presentation": "2014J",
+      "length_days": 262,
+      "assessment_types": {
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 1,
+          "earliest_deadline_day": null,
+          "latest_deadline_day": null,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 19,
+          "latest_deadline_day": 201,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "CCC",
+      "presentation": "2014B",
+      "length_days": 241,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 4,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 18,
+          "latest_deadline_day": 207,
+          "weight_sum_percent": 25.0
+        },
+        "Exam": {
+          "assessment_count": 2,
+          "missing_deadlines": 2,
+          "earliest_deadline_day": null,
+          "latest_deadline_day": null,
+          "weight_sum_percent": 200.0
+        },
+        "TMA": {
+          "assessment_count": 4,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 32,
+          "latest_deadline_day": 200,
+          "weight_sum_percent": 75.0
+        }
+      }
+    },
+    {
+      "module": "CCC",
+      "presentation": "2014J",
+      "length_days": 269,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 4,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 18,
+          "latest_deadline_day": 214,
+          "weight_sum_percent": 25.0
+        },
+        "Exam": {
+          "assessment_count": 2,
+          "missing_deadlines": 2,
+          "earliest_deadline_day": null,
+          "latest_deadline_day": null,
+          "weight_sum_percent": 200.0
+        },
+        "TMA": {
+          "assessment_count": 4,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 32,
+          "latest_deadline_day": 207,
+          "weight_sum_percent": 75.0
+        }
+      }
+    },
+    {
+      "module": "DDD",
+      "presentation": "2013B",
+      "length_days": 240,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 7,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 23,
+          "latest_deadline_day": 206,
+          "weight_sum_percent": 25.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 240,
+          "latest_deadline_day": 240,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 25,
+          "latest_deadline_day": 200,
+          "weight_sum_percent": 75.0
+        }
+      }
+    },
+    {
+      "module": "DDD",
+      "presentation": "2013J",
+      "length_days": 261,
+      "assessment_types": {
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 261,
+          "latest_deadline_day": 261,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 25,
+          "latest_deadline_day": 207,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "DDD",
+      "presentation": "2014B",
+      "length_days": 241,
+      "assessment_types": {
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 241,
+          "latest_deadline_day": 241,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 25,
+          "latest_deadline_day": 200,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "DDD",
+      "presentation": "2014J",
+      "length_days": 262,
+      "assessment_types": {
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 1,
+          "earliest_deadline_day": null,
+          "latest_deadline_day": null,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 20,
+          "latest_deadline_day": 195,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "EEE",
+      "presentation": "2013J",
+      "length_days": 268,
+      "assessment_types": {
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 235,
+          "latest_deadline_day": 235,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 4,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 33,
+          "latest_deadline_day": 159,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "EEE",
+      "presentation": "2014B",
+      "length_days": 241,
+      "assessment_types": {
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 228,
+          "latest_deadline_day": 228,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 4,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 33,
+          "latest_deadline_day": 152,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "EEE",
+      "presentation": "2014J",
+      "length_days": 269,
+      "assessment_types": {
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 235,
+          "latest_deadline_day": 235,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 4,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 33,
+          "latest_deadline_day": 166,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "FFF",
+      "presentation": "2013B",
+      "length_days": 240,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 7,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 222,
+          "latest_deadline_day": 222,
+          "weight_sum_percent": 0.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 222,
+          "latest_deadline_day": 222,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 19,
+          "latest_deadline_day": 166,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "FFF",
+      "presentation": "2013J",
+      "length_days": 268,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 7,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 236,
+          "latest_deadline_day": 236,
+          "weight_sum_percent": 0.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 236,
+          "latest_deadline_day": 236,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 19,
+          "latest_deadline_day": 173,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "FFF",
+      "presentation": "2014B",
+      "length_days": 241,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 7,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 227,
+          "latest_deadline_day": 227,
+          "weight_sum_percent": 0.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 227,
+          "latest_deadline_day": 227,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 24,
+          "latest_deadline_day": 171,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "FFF",
+      "presentation": "2014J",
+      "length_days": 269,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 7,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 241,
+          "latest_deadline_day": 241,
+          "weight_sum_percent": 0.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 241,
+          "latest_deadline_day": 241,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 5,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 24,
+          "latest_deadline_day": 199,
+          "weight_sum_percent": 100.0
+        }
+      }
+    },
+    {
+      "module": "GGG",
+      "presentation": "2013J",
+      "length_days": 261,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 229,
+          "latest_deadline_day": 229,
+          "weight_sum_percent": 0.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 229,
+          "latest_deadline_day": 229,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 3,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 61,
+          "latest_deadline_day": 173,
+          "weight_sum_percent": 0.0
+        }
+      }
+    },
+    {
+      "module": "GGG",
+      "presentation": "2014B",
+      "length_days": 241,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 222,
+          "latest_deadline_day": 222,
+          "weight_sum_percent": 0.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 222,
+          "latest_deadline_day": 222,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 3,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 61,
+          "latest_deadline_day": 166,
+          "weight_sum_percent": 0.0
+        }
+      }
+    },
+    {
+      "module": "GGG",
+      "presentation": "2014J",
+      "length_days": 269,
+      "assessment_types": {
+        "CMA": {
+          "assessment_count": 6,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 229,
+          "latest_deadline_day": 229,
+          "weight_sum_percent": 0.0
+        },
+        "Exam": {
+          "assessment_count": 1,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 229,
+          "latest_deadline_day": 229,
+          "weight_sum_percent": 100.0
+        },
+        "TMA": {
+          "assessment_count": 3,
+          "missing_deadlines": 0,
+          "earliest_deadline_day": 61,
+          "latest_deadline_day": 173,
+          "weight_sum_percent": 0.0
+        }
+      }
+    }
+  ],
+  "privacy": "Positive learner counts below 10 are suppressed. Outcome partitions also use complementary suppression; no outcome total or percentages are exported when any cell is hidden.",
+  "names_count_discrepancy": "OULAD.names lists 32953 students/registrations, but its class distribution totals 32593. Local CSV row counts are reported above."
+}
