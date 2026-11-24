@@ -30,6 +30,13 @@ analysis code link. The pre-render check rejects draft, future-dated, unlinked,
 or computationally executable posts. The archive orders published posts by
 coverage date; unassigned proposed weeks do not become posts.
 
+The grocery pilot and its four verified public exports are together in
+`site/drafts/`. They remain excluded until the actual publication date is
+known. At publication, move the post and its accompanying asset directory
+together into `site/posts/`, set the actual publication date and `draft: false`,
+replace the draft's "not yet published" wording with the actual publication
+date, and verify the deployment. Do not treat a local render as publication.
+
 ## GitHub Pages
 
 The included Actions workflow renders the curated site and deploys

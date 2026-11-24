@@ -55,6 +55,22 @@ class PostGuardTests(unittest.TestCase):
 
 
 class OutputGuardTests(unittest.TestCase):
+    def test_only_named_grocery_exports_are_allowed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            (root / "index.html").write_text("ok", encoding="utf-8")
+            assets = root / "posts/grocery-2023-06-14-assets"
+            assets.mkdir(parents=True)
+            copyfile(ROOT / "site/drafts/grocery-2023-06-14-assets/monthly-prices.csv",
+                     assets / "monthly-prices.csv")
+            cmd = [sys.executable, str(ROOT / "site/check-output.py"), str(root)]
+            self.assertEqual(subprocess.run(cmd, capture_output=True).returncode, 0)
+            (assets / "monthly-prices.csv").write_text("tampered", encoding="utf-8")
+            self.assertNotEqual(subprocess.run(cmd, capture_output=True).returncode, 0)
+            (assets / "monthly-prices.csv").unlink()
+            (assets / "studentInfo.csv").write_text("private", encoding="utf-8")
+            self.assertNotEqual(subprocess.run(cmd, capture_output=True).returncode, 0)
+
     def test_raw_data_and_symlink_are_rejected(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
