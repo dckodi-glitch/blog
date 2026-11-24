@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="420" viewBox="0 0 840 420" role="img" aria-labelledby="title desc">
+<title id="title">2024 retrospective WR baseline error</title>
+<desc id="desc">Mean absolute PPR points error by target week for scored observed receiver rows with prior history. Weeks 9 to 13 are development and 14 to 18 are held-out test.</desc>
+<rect width="840" height="420" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#192b3d">
+<text x="66" y="28" font-size="20" font-weight="bold">2024 receiver baseline: weekly prediction error</text>
+<text x="66" y="50" font-size="13">Observed stat rows with prior history · PPR points · lower is better</text>
+<path d="M66 332.00h720" stroke="#dbe4eb"/><text x="57" y="336.00" text-anchor="end" font-size="12">0</text>
+<path d="M66 245.33h720" stroke="#dbe4eb"/><text x="57" y="249.33" text-anchor="end" font-size="12">2</text>
+<path d="M66 158.67h720" stroke="#dbe4eb"/><text x="57" y="162.67" text-anchor="end" font-size="12">4</text>
+<path d="M66 72.00h720" stroke="#dbe4eb"/><text x="57" y="76.00" text-anchor="end" font-size="12">6</text>
+<rect x="76.00" y="146.82" width="52.00" height="185.18" fill="#2876a7"/>
+<text x="102.00" y="139.82" text-anchor="middle" font-size="12">4.27</text>
+<text x="102.00" y="352" text-anchor="middle" font-size="12">9</text>
+<rect x="148.00" y="138.54" width="52.00" height="193.46" fill="#2876a7"/>
+<text x="174.00" y="131.54" text-anchor="middle" font-size="12">4.46</text>
+<text x="174.00" y="352" text-anchor="middle" font-size="12">10</text>
+<rect x="220.00" y="132.83" width="52.00" height="199.17" fill="#2876a7"/>
+<text x="246.00" y="125.83" text-anchor="middle" font-size="12">4.60</text>
+<text x="246.00" y="352" text-anchor="middle" font-size="12">11</text>
+<rect x="292.00" y="159.64" width="52.00" height="172.36" fill="#2876a7"/>
+<text x="318.00" y="152.64" text-anchor="middle" font-size="12">3.98</text>
+<text x="318.00" y="352" text-anchor="middle" font-size="12">12</text>
+<rect x="364.00" y="161.75" width="52.00" height="170.25" fill="#2876a7"/>
+<text x="390.00" y="154.75" text-anchor="middle" font-size="12">3.93</text>
+<text x="390.00" y="352" text-anchor="middle" font-size="12">13</text>
+<rect x="436.00" y="128.00" width="52.00" height="204.00" fill="#df8840"/>
+<text x="462.00" y="121.00" text-anchor="middle" font-size="12">4.71</text>
+<text x="462.00" y="352" text-anchor="middle" font-size="12">14</text>
+<rect x="508.00" y="136.21" width="52.00" height="195.79" fill="#df8840"/>
+<text x="534.00" y="129.21" text-anchor="middle" font-size="12">4.52</text>
+<text x="534.00" y="352" text-anchor="middle" font-size="12">15</text>
+<rect x="580.00" y="163.84" width="52.00" height="168.16" fill="#df8840"/>
+<text x="606.00" y="156.84" text-anchor="middle" font-size="12">3.88</text>
+<text x="606.00" y="352" text-anchor="middle" font-size="12">16</text>
+<rect x="652.00" y="131.84" width="52.00" height="200.16" fill="#df8840"/>
+<text x="678.00" y="124.84" text-anchor="middle" font-size="12">4.62</text>
+<text x="678.00" y="352" text-anchor="middle" font-size="12">17</text>
+<rect x="724.00" y="139.22" width="52.00" height="192.78" fill="#df8840"/>
+<text x="750.00" y="132.22" text-anchor="middle" font-size="12">4.45</text>
+<text x="750.00" y="352" text-anchor="middle" font-size="12">18</text>
+<text x="426" y="378" text-anchor="middle" font-size="13">Target week</text>
+<text x="66" y="403" font-size="12" fill="#2876a7">■ Development: weeks 9–13</text>
+<text x="275" y="403" font-size="12" fill="#ad5b17">■ Held-out test: weeks 14–18</text>
+</g></svg>

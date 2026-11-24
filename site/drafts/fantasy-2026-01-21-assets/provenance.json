@@ -1,0 +1,29 @@
+{
+  "analysis": "2024 retrospective observed-WR-row PPR prior-game mean",
+  "dataset_source_url": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2024.csv",
+  "upstream_release_asset_sha256_verified_utc": "2026-11-23",
+  "dataset_sha256": "3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759",
+  "repository_import_commit": "1c0f7b29ff332313cc4d27eb28d1ac635fa31e9f",
+  "repository_git_blob_sha1": "7a18861cf2f19f9d6b13b4c764606cc3d5ab66bf",
+  "observation_period": "2024 NFL regular season weeks 1-18",
+  "prediction_cutoff": "strictly before each target week; current-week observed rows define retrospective evaluation only",
+  "execution_timestamp_utc": "2026-11-23T06:25:57.554413+00:00",
+  "publication_date": null,
+  "analysis_script_sha256": "c04fadf3aaf58cdb99ee281149b5f3a33815ee325e13d8c2eaa4cc9a74ceece6",
+  "scoring": "PPR; explicit STAT_WEIGHTS in retrospective_2024.py; source fantasy_points_ppr checked for every complete selected row",
+  "development": "weeks 1-13; weeks 1-8 warmup and 9-13 evaluated",
+  "held_out_test": "weeks 14-18, no model tuning",
+  "coverage_definition": "evaluated forecast matches / observed WR rows with game and player IDs and complete validated scored outcomes",
+  "limitations": [
+    "Observed stat rows are not a complete active roster or a prospective lineup universe.",
+    "Absent player rows and missing scores are not zero; inactive status cannot be distinguished from other absence.",
+    "Current-week observed rows select the evaluation population retrospectively.",
+    "2024 results do not evaluate the original 2025 projections."
+  ],
+  "outputs": [
+    "retrospective_2024/predictions.csv",
+    "retrospective_2024/summary.csv",
+    "retrospective_2024/weekly_mae.svg",
+    "retrospective_2024/provenance.json"
+  ]
+}
