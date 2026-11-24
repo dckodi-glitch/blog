@@ -1,0 +1,61 @@
+---
+title: "How did grocery price levels change month to month?"
+description: "A retrospective comparison within three fixed-vintage grocery series."
+date: 2023-07-26
+publication-date: null
+draft: true
+---
+
+**New retrospective analysis.** July 26, 2023 is a coverage label, not a
+work or publication date. The analysis ran on November 24, 2026 at 12:13:50
+UTC-08:00. This draft has not been published; its publication date is unknown.
+
+## The question
+
+Which months saw the largest month-to-month movements in the average price
+levels of bread, eggs and milk, considered separately?
+
+The original workbooks contain monthly U.S. city average prices from January
+2018 through May 2023, from the **June 13, 2023 ALFRED vintage**. The files
+were created in November 2026. This fixed vintage does not necessarily
+include everything available by the July coverage date.
+
+## Within each series
+
+For each product, the analysis subtracts the previous month's price from the
+current price. Absolute change is the magnitude of that difference; percentage
+change divides the signed difference by the previous price. Each series has
+65 observations and 64 consecutive comparisons. The first month has no prior
+observation, so its differences are blank. The workbook audit stops on missing
+data; the calculation also marks unavailable comparisons rather than bridging
+a missing month or value.
+
+The largest absolute movement **within each product** is shown below. The
+units differ, so the rows are not a ranking across products.
+
+| Product | Month | Signed change | Absolute change | Percentage change |
+|---|---|---:|---:|---:|
+| White bread | September 2021 | +$0.113 per pound | $0.113 per pound | +7.70% |
+| Large eggs | March 2023 | -$0.765 per dozen | $0.765 per dozen | -18.17% |
+| Whole milk | May 2022 | +$0.192 per gallon | $0.192 per gallon | +4.79% |
+
+The [monthly differences table](grocery-2023-07-26-assets/monthly-differences.csv)
+contains the prices, units, differences and comparison status for every
+observation. These changes describe average price levels, **not formal CPI
+inflation measures**. They are national urban averages, not local store
+prices; the [BLS recommends CPI indexes](https://www.bls.gov/cpi/factsheets/average-prices.htm)
+for measuring price change.
+
+## Provenance
+
+The [analysis metadata](grocery-2023-07-26-assets/analysis-metadata.json)
+records input hashes, input revision, vintage and execution date. The exact
+[calculation source revision](https://github.com/dckodi-glitch/grocery-changes/blob/f092b3a782ecc2da931e0f0576684338511997bb/monthly_differences.py)
+has SHA-256 `c5b31818a4918d9dd252f0f3ba106b9b398a1cf3a43092207edc36b6576b34fa`;
+a matching [source snapshot](grocery-2023-07-26-assets/monthly_differences.py)
+is included with the draft.
+It uses the workbook audit in
+[`analyze.py`](https://github.com/dckodi-glitch/grocery-changes/blob/f092b3a782ecc2da931e0f0576684338511997bb/analyze.py),
+whose bytes match the SHA-256 recorded in the metadata. The calculation
+commit was created after execution, and its source hashes match those recorded
+at execution. The corresponding analysis pull request is not yet merged.
