@@ -1604,7 +1604,7 @@
     {
       "coverage_date": "2024-08-07",
       "featured_project": "electricity",
-      "slot_status": "proposed_milestone",
+      "slot_status": "retrospective_executed",
       "milestone_id": "e03",
       "proposed_question": "How does active power vary by hour of day?",
       "small_milestone": "Aggregate valid readings by hour and report completeness.",
@@ -1623,11 +1623,16 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
-      "publication_status": "excluded_draft; no post created",
-      "actual_execution_date": null,
+      "evidence_status": "retrospective hourly analysis executed; planned e02 remains uncompleted",
+      "publication_status": "excluded_draft; prepared locally, not published",
+      "actual_execution_date": "2026-11-24T13:08:19.682865-08:00",
       "actual_publication_date": null,
       "analysis_code_revision": null,
+      "analysis_source_sha256": "ac056b355793410ea6a8206844051510a0a56350cb8051d99ebbcb4584c002c3",
+      "analysis_base_revision": "16e57642f3bb5fc21a62bc84f48550f83cbd9081",
+      "input_data_revision": "929ed43064487e09fe69af58f5c43d5971fa14a4",
+      "prepared_post": "site/drafts/electricity-2024-08-07.qmd",
+      "analysis_revision_availability": "Exact source snapshot identified by SHA-256; hourly code was uncommitted at execution and has no Git permalink.",
       "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
     },
     {
@@ -3217,7 +3222,7 @@
     {
       "coverage_date": "2025-10-15",
       "featured_project": "fantasy football",
-      "slot_status": "proposed_milestone",
+      "slot_status": "retrospective_executed",
       "milestone_id": "f02",
       "proposed_question": "Which notebook evidence is safe to use?",
       "small_milestone": "Document saved sections and exclude the original Week 8 matchup because the defense inputs duplicate.",
@@ -3238,11 +3243,14 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
-      "publication_status": "excluded_draft; no post created",
-      "actual_execution_date": null,
+      "evidence_status": "retrospective source inspection completed; saved notebook outputs not rerun or revalidated; planned f01 remains uncompleted",
+      "publication_status": "excluded_draft; prepared locally, not published",
+      "actual_execution_date": "2026-11-24T13:11:48-08:00",
       "actual_publication_date": null,
       "analysis_code_revision": null,
+      "evidence_repository_revision": "8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb",
+      "evidence_repository_url": "https://github.com/dckodi-glitch/fantasy-changes/tree/8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb",
+      "prepared_post": "site/drafts/fantasy-2025-10-15.qmd",
       "unavailable_data_or_release_uncertainty": "Exclude original 2025 Week 8 matchup: Defense7 duplicates Defense6. Week 12 split inputs and Week 13 result file absent; do not reconstruct splits. Season and release timestamps need verification."
     },
     {

@@ -1,0 +1,54 @@
+---
+title: "Which fantasy matchup evidence can we use?"
+description: "A retrospective inventory of input weeks, outcomes and source limitations."
+date: 2025-10-15
+publication-date: null
+draft: true
+---
+
+**Retrospective source inspection.** October 15, 2025 is a coverage label,
+not a claim that this review or post occurred then. The source inspection
+was completed on November 24, 2026 at 13:11:48 UTC-08:00. This draft is not
+published; its publication date is unknown.
+
+## What do the files map to?
+
+The original project's [README at the inspected revision](https://github.com/dckodi-glitch/fantasy-changes/blob/8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb/README.md)
+explains that input filenames use the week before the intended projection.
+The [original notebook](https://github.com/dckodi-glitch/fantasy-changes/blob/8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb/Fantasy_Football_Project.ipynb)
+and result files support the following mapping. A result file's `WK` field
+is a recorded outcome-week label, not evidence that every receiver's outcome
+is present.
+
+| WR and defense inputs | Intended projection | Result file and recorded week | Use |
+|---|---|---|---|
+| WR6, Defense6 | Week 7 | WR6Results: 7 | Source evidence only |
+| WR7, Defense7 | Week 8 | WR7Results: 8 | **Exclude matchup analysis** |
+| WR8, Defense8 | Week 9 | WR8Results: 9 | Source evidence only |
+| WR9, Defense9 | Week 10 | WR9Results: 10 | Source evidence only |
+| WR10, Defense10 | Week 11 | WR10Results: 11 | Source evidence only |
+| WR12, Defense12 | Week 13 | No result file available | Outcome unavailable |
+
+These filenames indicate intended projection weeks; they do **not** prove
+the source data's season or publication time. The original project describes
+the work as 2025, but snapshot availability dates and cutoff times are
+unverified. Saved notebook outputs are historical evidence, not results
+revalidated by this inspection.
+
+## Why exclude the Week 8 matchup?
+
+[Defense6.csv](https://github.com/dckodi-glitch/fantasy-changes/blob/8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb/Defense6.csv)
+and [Defense7.csv](https://github.com/dckodi-glitch/fantasy-changes/blob/8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb/Defense7.csv)
+are byte-for-byte identical, with SHA-256
+`8cb321a4e7b58fb753b1a736fa535d90b5b585583b9a04777b4046bdeeec463b`.
+The intended Week 8 defensive input is therefore unreliable. Both files and
+the original notebook remain unchanged; unavailable slot/wide splits are not
+reconstructed.
+
+The notebook joins projection and outcome data by exact player name, so
+spelling, punctuation or shared names can cause missed or incorrect matches.
+Each available results export contains 100 rows except WR9Results, which
+contains 99; they do not establish outcomes for all receivers. Repeated
+`YDS` and `TD` column names also need positional care. Missing outcomes are
+unknown, not zero. WR11/Defense11, WR12Results and other unprovided
+historical snapshots are unavailable.
