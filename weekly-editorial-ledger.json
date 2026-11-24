@@ -3618,34 +3618,34 @@
     {
       "coverage_date": "2026-01-21",
       "featured_project": "fantasy football",
-      "slot_status": "proposed_milestone",
+      "slot_status": "retrospective_executed",
       "milestone_id": "f09",
-      "proposed_question": "How stable are the permitted comparisons across weeks?",
-      "small_milestone": "Summarize only validated Week 7, 9, 10 and 11 comparisons and disclose exclusions.",
+      "proposed_question": "How did the 2024 prior-game receiver baseline perform in held-out weeks?",
+      "small_milestone": "Summarize the existing 2024 retrospective baseline and disclose its population and coverage limits.",
       "required_inputs": [
-        "approved aggregate results from f04, f05, f06 and f07"
+        "fantasy-changes:retrospective_2024/summary.csv",
+        "fantasy-changes:retrospective_2024/provenance.json"
       ],
-      "prerequisites": [
-        "f04",
-        "f05",
-        "f06",
-        "f07",
-        "f08"
-      ],
-      "observation_period": "Prior-week inputs and corresponding outcome week as specified by the milestone; exact season provenance to confirm",
-      "historical_cutoff": "For each matchup use only inputs available before its outcome week; exact timestamps are unverified",
-      "expected_evidence": "Per-week aggregate error table with sample sizes.",
+      "prerequisites": [],
+      "original_planned_milestone": "Summarize validated 2025 Week 7, 9, 10 and 11 comparisons after f04-f08; those milestones are not claimed as completed.",
+      "observation_period": "2024 NFL regular season weeks 1-18",
+      "historical_cutoff": "Each prediction uses earlier scored weeks only; source data vintage was verified 2026-11-23 and historical availability is unverified.",
+      "expected_evidence": "2024 held-out aggregate error and coverage table, with weekly MAE figure.",
       "estimated_minutes": {
         "analysis": 60,
         "validation": 25,
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
-      "publication_status": "excluded_draft; no post created",
-      "actual_execution_date": null,
+      "evidence_status": "existing 2024 retrospective baseline executed; no 2025 matchup evaluation claimed",
+      "publication_status": "excluded_draft; prepared locally, not published",
+      "actual_execution_date": "2026-11-23T06:25:57.554413+00:00",
       "actual_publication_date": null,
-      "analysis_code_revision": null,
+      "analysis_code_revision": "8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb",
+      "analysis_code_url": "https://github.com/dckodi-glitch/fantasy-changes/blob/8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb/retrospective_2024.py",
+      "analysis_source_sha256": "c04fadf3aaf58cdb99ee281149b5f3a33815ee325e13d8c2eaa4cc9a74ceece6",
+      "input_data_revision": "1c0f7b29ff332313cc4d27eb28d1ac635fa31e9f",
+      "prepared_post": "site/drafts/fantasy-2026-01-21.qmd",
       "unavailable_data_or_release_uncertainty": "Exclude original 2025 Week 8 matchup: Defense7 duplicates Defense6. Week 12 split inputs and Week 13 result file absent; do not reconstruct splits. Season and release timestamps need verification."
     },
     {
