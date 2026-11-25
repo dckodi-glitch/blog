@@ -2157,7 +2157,7 @@
       "slot_status": "proposed_milestone",
       "milestone_id": "e08",
       "proposed_question": "What portion is not covered by the three submeters?",
-      "small_milestone": "Compute the UCI-described residual only for rows with valid inputs; inspect negative or inconsistent cases.",
+      "small_milestone": "Compute the UCI-described residual only when all required inputs are valid; report excluded rows and inspect negative or inconsistent values.",
       "required_inputs": [
         "electricity-changes:individual+household+electric+power+consumption.zip"
       ],
@@ -2166,19 +2166,19 @@
       ],
       "observation_period": "2006-12-16 17:24 through 2010-11-26 21:02",
       "historical_cutoff": "Last dataset timestamp 2010-11-26 21:02; UCI donation 2012-08-29",
-      "expected_evidence": "Residual distribution and anomaly counts.",
+      "expected_evidence": "Residual distribution, valid/excluded row counts, and anomaly notes.",
       "estimated_minutes": {
         "analysis": 60,
         "validation": 25,
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed retrospective; e07 remains proposed without submeter-channel results, and source snapshot e69fadb3089e96e8dd9ea812559d840dddf13d6c contains no residual output; no e08 execution or result is evidenced, and public history does not establish 2025 work",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
+      "unavailable_data_or_release_uncertainty": "Static one-household dataset; e07 must first validate submeter units and missingness. No weekly releases or tariff data; do not infer appliance use or household behavior."
     },
     {
       "coverage_date": "2025-01-08",
@@ -2286,29 +2286,32 @@
       "slot_status": "proposed_milestone",
       "milestone_id": "e09",
       "proposed_question": "Do seasonal hourly profiles differ?",
-      "small_milestone": "Compare observed seasonal profiles using only sufficiently complete days.",
+      "small_milestone": "Compare source-clock hour-of-day means across explicitly defined seasons using e01 complete days; report eligible-day counts.",
       "required_inputs": [
-        "electricity-changes:individual+household+electric+power+consumption.zip"
+        "electricity-changes:individual+household+electric+power+consumption.zip",
+        "blog:site/drafts/electricity-2024-06-05-assets/daily_consumption.csv",
+        "blog:site/drafts/electricity-2024-06-05-assets/export_metadata.json",
+        "blog:site/drafts/electricity-2024-06-05-assets/quality_summary.json"
       ],
       "prerequisites": [
-        "e03",
-        "e02"
+        "e01",
+        "e03"
       ],
       "observation_period": "2006-12-16 17:24 through 2010-11-26 21:02",
       "historical_cutoff": "Last dataset timestamp 2010-11-26 21:02; UCI donation 2012-08-29",
-      "expected_evidence": "Seasonal small-multiple profiles.",
+      "expected_evidence": "Seasonal small-multiple source-clock profiles with complete-day counts, declared season boundaries, and timezone limitation.",
       "estimated_minutes": {
         "analysis": 60,
         "validation": 25,
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed retrospective; e01 complete-day flags and e03 all-period hourly means exist, but no seasonal output is present at source snapshot e69fadb3089e96e8dd9ea812559d840dddf13d6c; e03 source revision 2d94f2982173471a49379bcb45e537ebba23f35b has source SHA-256 ac056b355793410ea6a8206844051510a0a56350cb8051d99ebbcb4584c002c3 and input revision 929ed43064487e09fe69af58f5c43d5971fa14a4; no e09 execution or result is evidenced, and public history does not establish 2025 work",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
+      "unavailable_data_or_release_uncertainty": "Static one-household dataset; source timezone is unspecified and season boundaries must be declared before analysis. Use only complete e01 days; no weekly releases or tariff data."
     },
     {
       "coverage_date": "2025-02-12",
@@ -2391,28 +2394,26 @@
       "slot_status": "proposed_milestone",
       "milestone_id": "e10",
       "proposed_question": "How variable is voltage in the observed household?",
-      "small_milestone": "Summarize the valid voltage distribution and missingness.",
+      "small_milestone": "Validate voltage values and missing markers, then summarize the distribution with valid and missing counts.",
       "required_inputs": [
         "electricity-changes:individual+household+electric+power+consumption.zip"
       ],
-      "prerequisites": [
-        "e02"
-      ],
+      "prerequisites": [],
       "observation_period": "2006-12-16 17:24 through 2010-11-26 21:02",
       "historical_cutoff": "Last dataset timestamp 2010-11-26 21:02; UCI donation 2012-08-29",
-      "expected_evidence": "Voltage distribution and quality note.",
+      "expected_evidence": "Voltage distribution chart or table and a quality note with valid/missing observation counts.",
       "estimated_minutes": {
         "analysis": 60,
         "validation": 25,
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed retrospective; source snapshot e69fadb3089e96e8dd9ea812559d840dddf13d6c contains no voltage analysis or output; no e10 execution or result is evidenced, and public history does not establish 2025 work",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
+      "unavailable_data_or_release_uncertainty": "Static one-household dataset; voltage units and missing markers need validation. No weekly releases or tariff data; results would not generalize to other homes or current line conditions."
     },
     {
       "coverage_date": "2025-03-12",

@@ -61,6 +61,42 @@ electricity data and contains no prices. Unit conversions, time convention,
 missing markers and partial days require explicit validation. UCI identifies
 the dataset as CC BY 4.0; cite the source.
 
+### Follow-up repository evidence (2026-11-24)
+
+The public electricity repository snapshot
+[`e69fadb3089e96e8dd9ea812559d840dddf13d6c`](https://github.com/dckodi-glitch/electricity-changes/tree/e69fadb3089e96e8dd9ea812559d840dddf13d6c)
+includes the original archive (input commit
+`929ed43064487e09fe69af58f5c43d5971fa14a4`, blob
+`ae8864521e68b784443e4e9f55c7505812ee6c36`), `outputs/daily_consumption.csv`,
+`outputs/hourly_active_power.csv`, `outputs/quality_summary.json`, and
+provenance metadata. The daily CSV at that snapshot (blob
+`b7f16bf4efd5e927cea47c97c40a27b8a8fd195f`) is byte-identical to the
+blog-preserved e01 daily CSV (SHA-256
+`df297bdc4431035e9fc3cac371bb2ab355799db2b3d4cf482500b79bff60cde2`).
+The repository's earliest public commit is dated 2026-11-13; this history
+does not establish whether work occurred earlier.
+
+The blog-preserved e01 daily CSV contains aggregate active-energy values plus
+expected, observed, valid and missing minute counts and a complete-day flag.
+Its metadata records execution on 2026-11-14 from a dirty tree based at input
+commit
+[`929ed43064487e09fe69af58f5c43d5971fa14a4`](https://github.com/dckodi-glitch/electricity-changes/commit/929ed43064487e09fe69af58f5c43d5971fa14a4).
+The executed source snapshot has SHA-256
+`ae46f2abe167f4d5d14395829ee3e542c7af04bb84397fbd46cbf45149a5cd37`; the
+same content was later committed at
+[`16e57642f3bb5fc21a62bc84f48550f83cbd9081`](https://github.com/dckodi-glitch/electricity-changes/commit/16e57642f3bb5fc21a62bc84f48550f83cbd9081).
+This existing output supports planned monthly aggregation (e05) and a
+separate complete-day distribution summary (e06); neither monthly totals nor
+a distribution summary is present in the inspected tree. The blog-preserved
+e01 metadata remains the relevant execution record; the current source
+snapshot's single export metadata file describes the later e03 run.
+The current analysis exports active-power summaries only. Its 24 hourly
+groups span the full observation period; it has no residual, seasonal,
+voltage, or submeter-channel summaries. e07 and its dependent e08 therefore
+remain proposed, e09 would need a seasonal split of complete days rather than
+reuse the all-period hourly means, and e10 needs separate voltage validation.
+No repository code was run for this follow-up inspection.
+
 ## Fantasy: week mapping and exclusions
 
 The README says input filenames name the number of weeks already observed.
