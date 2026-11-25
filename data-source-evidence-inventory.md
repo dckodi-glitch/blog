@@ -97,6 +97,16 @@ remain proposed, e09 would need a seasonal split of complete days rather than
 reuse the all-period hourly means, and e10 needs separate voltage validation.
 No repository code was run for this follow-up inspection.
 
+The e01 daily CSV carries expected, observed, valid and missing minute counts
+for 1,442 dates; its quality summary reports 1,358 complete days, 84 partial
+or incomplete days and 25,979 missing active-power minutes. It sums valid
+minute readings without imputing missing power. This supports planning e11's
+full-day-only comparison of 1,440 valid minutes versus a clearly labeled
+95% (1,368-minute) sensitivity threshold; the repository contains no such
+sensitivity result. e12 remains a proposed synthesis dependent on e05, e08
+and e11, whose aggregate deliverables are not present at this snapshot. No
+repository code was run for this follow-up.
+
 ## Fantasy: week mapping and exclusions
 
 The README says input filenames name the number of weeks already observed.

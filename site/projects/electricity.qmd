@@ -47,4 +47,16 @@ proposed because the current outputs contain no voltage analysis or
 missingness summary. None of e08–e10 has an execution date, result, or
 publication; their drafts remain excluded. The other ten coverage dates from
 December 11, 2024 through March 5, 2025 remain unassigned.
+
+The April 2 e11 proposal reuses e01's daily aggregates to compare strict
+1,440-valid-minute inclusion with a labeled 95% sensitivity threshold (at
+least 1,368 valid minutes) on full calendar days. It will report observed
+energy without filling missing readings; incomplete-day sums are not full-day
+estimates, and no sensitivity result exists. The May 7 e12 synthesis depends
+on e05, e08 and e11 outputs, none of which is yet available. It remains
+proposed and must distinguish supported observations for this household
+from claims about other homes or current conditions. Neither e11 nor e12 has
+a verified execution or publication date. The other eleven coverage dates
+from March 12 through June 4, 2025 remain unassigned.
+
 [Return to the weekly archive](../archive.qmd)
