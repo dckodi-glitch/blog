@@ -32,4 +32,19 @@ entries remain proposed, not completed. The normalized-level analysis
 proposed for g08 has not been executed. Four weeks from August 9 through
 August 30 remain unassigned because no distinct milestone is supported.
 
+For September 13 through December 6, 2023, g10 remains a proposed comparison
+of the workbooks' series definitions and units. For December 13, 2023 through
+March 6, 2024, g11 remains a proposal to compare selected historical windows;
+it is not a claim of work in 2024. The other 12 weeks in that range remain
+unassigned.
+The public grocery repository history begins with its
+[initial commit](https://github.com/dckodi-glitch/grocery-changes/commit/ae661351a4906997e914f600adaa449dedef9a5c)
+on November 13, 2026; it does not establish work during either coverage
+period. No additional analyses or posts are supported by the available
+evidence.
+
+For March 13 through June 5, 2024, g12 remains proposed, but depends on g06
+and g08, which have not been executed; no synthesis or result is available.
+The other grocery weeks in this range remain unassigned.
+
 [Return to the weekly archive](../archive.qmd)

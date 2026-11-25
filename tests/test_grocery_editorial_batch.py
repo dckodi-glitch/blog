@@ -64,6 +64,60 @@ class GroceryEditorialBatchTests(unittest.TestCase):
             self.assertFalse(any(name.endswith((".xlsx", ".xls", ".db")) for name in names))
             self.assertFalse(any("student" in name or "learner" in name for name in names))
 
+    def test_second_batch_keeps_only_g10_proposed(self):
+        batch_dates = [
+            "2023-09-13", "2023-09-20", "2023-09-27",
+            "2023-10-04", "2023-10-11", "2023-10-18", "2023-10-25",
+            "2023-11-01", "2023-11-08", "2023-11-15", "2023-11-22",
+            "2023-11-29", "2023-12-06",
+        ]
+        batch = [entry for entry in self.ledger["entries"]
+                 if entry.get("coverage_date") in batch_dates]
+        self.assertEqual(len(batch), 13)
+        self.assertEqual({entry["coverage_date"] for entry in batch}, set(batch_dates))
+        g10 = next(entry for entry in batch if entry.get("milestone_id") == "g10")
+        self.assertEqual(g10["coverage_date"], "2023-11-01")
+        self.assertEqual(g10["slot_status"], "proposed_milestone")
+        self.assertIn("proposed future retrospective", g10["evidence_status"])
+        self.assertIn("ae661351a4906997e914f600adaa449dedef9a5c", g10["evidence_status"])
+        self.assertIsNone(g10["actual_execution_date"])
+        self.assertIsNone(g10["actual_publication_date"])
+        self.assertIsNone(g10.get("prepared_post"))
+        self.assertEqual(g10["publication_status"], "excluded_draft; no post created")
+        self.assertLessEqual(g10["estimated_minutes"]["total"], 120)
+
+        unassigned = [entry for entry in batch if entry["slot_status"] == "unassigned_undocumented"]
+        self.assertEqual(len(unassigned), 12)
+        self.assertTrue(all(entry.get("milestone_id") is None for entry in unassigned))
+        self.assertTrue(all(entry["estimated_minutes"]["total"] == 0 for entry in unassigned))
+
+    def test_third_batch_keeps_only_g11_proposed(self):
+        batch_dates = [
+            "2023-12-13", "2023-12-20", "2023-12-27",
+            "2024-01-03", "2024-01-10", "2024-01-17", "2024-01-24",
+            "2024-01-31", "2024-02-07", "2024-02-14", "2024-02-21",
+            "2024-02-28", "2024-03-06",
+        ]
+        batch = [entry for entry in self.ledger["entries"]
+                 if entry.get("coverage_date") in batch_dates]
+        self.assertEqual(len(batch), 13)
+        self.assertEqual({entry["coverage_date"] for entry in batch}, set(batch_dates))
+        g11 = next(entry for entry in batch if entry.get("milestone_id") == "g11")
+        self.assertEqual(g11["coverage_date"], "2024-02-07")
+        self.assertEqual(g11["slot_status"], "proposed_milestone")
+        self.assertIn("proposed future retrospective", g11["evidence_status"])
+        self.assertIn("ae661351a4906997e914f600adaa449dedef9a5c", g11["evidence_status"])
+        self.assertIsNone(g11["actual_execution_date"])
+        self.assertIsNone(g11["actual_publication_date"])
+        self.assertIsNone(g11.get("prepared_post"))
+        self.assertEqual(g11["publication_status"], "excluded_draft; no post created")
+        self.assertLessEqual(g11["estimated_minutes"]["total"], 120)
+
+        unassigned = [entry for entry in batch if entry["slot_status"] == "unassigned_undocumented"]
+        self.assertEqual(len(unassigned), 12)
+        self.assertTrue(all(entry.get("milestone_id") is None for entry in unassigned))
+        self.assertTrue(all(entry["estimated_minutes"]["total"] == 0 for entry in unassigned))
+
 
 if __name__ == "__main__":
     unittest.main()
