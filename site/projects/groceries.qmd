@@ -21,8 +21,15 @@ vintage is not a stream of new weekly releases.
 
 ## Status
 
-A grocery pilot has been prepared from a newly executed retrospective
-analysis, but it is not published yet. When published, it will link its exact
-analysis revision and explain its observation period and limitations.
+Two grocery analyses have been executed retrospectively: g01 on November 13,
+2026, and g07 on November 24, 2026. Their draft posts and aggregate exports
+remain excluded from publication.
+
+The g01 analysis already includes per-series quality checks and a three-panel
+price history. These outputs overlap the proposals for g02-g06 and g09, but
+do not establish separate work or posts for those coverage dates. Those
+entries remain proposed, not completed. The normalized-level analysis
+proposed for g08 has not been executed. Four weeks from August 9 through
+August 30 remain unassigned because no distinct milestone is supported.
 
 [Return to the weekly archive](../archive.qmd)
