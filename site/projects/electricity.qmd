@@ -18,7 +18,24 @@ or current bill estimates.
 
 ## Status
 
-Published entries will identify their data cutoff, aggregation rules and exact
-analysis revision.
+The June 5, 2024 coverage slot is a topic label, not a work date. Its
+retrospective analysis ran on November 14, 2026; the draft remains excluded
+and has no publication date. The exact
+[analysis revision](https://github.com/dckodi-glitch/electricity-changes/blob/16e57642f3bb5fc21a62bc84f48550f83cbd9081/analysis/household_power.py)
+matches the recorded source hash, although the working tree was dirty when
+the analysis ran. The input archive is pinned to
+[revision `929ed43064487e09fe69af58f5c43d5971fa14a4`](https://github.com/dckodi-glitch/electricity-changes/commit/929ed43064487e09fe69af58f5c43d5971fa14a4).
+
+The July 3, 2024 e02 completeness proposal overlaps missing-marker, duplicate
+timestamp and daily-coverage checks already reported by e01; no separate e02
+analysis or post is claimed. The August 7, 2024 e03 hourly profile was executed
+retrospectively on November 24, 2026. Its exact source snapshot is preserved
+with the excluded draft (SHA-256
+`ac056b355793410ea6a8206844051510a0a56350cb8051d99ebbcb4584c002c3`) and
+[committed source revision](https://github.com/dckodi-glitch/electricity-changes/blob/2d94f2982173471a49379bcb45e537ebba23f35b/analysis/household_power.py).
+It used input revision `929ed43064487e09fe69af58f5c43d5971fa14a4`; the source
+was committed and clean at execution. The draft remains excluded with no
+publication date. The September 4, 2024 e04 weekday/weekend comparison is
+still proposed, with no results or post asserted.
 
 [Return to the weekly archive](../archive.qmd)

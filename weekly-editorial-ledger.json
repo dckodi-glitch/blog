@@ -595,7 +595,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed future retrospective; public grocery history begins at commit ae661351a4906997e914f600adaa449dedef9a5c on 2026-11-13; no 2023 work, result or post asserted",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
@@ -951,7 +951,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed future retrospective; public grocery history begins at commit ae661351a4906997e914f600adaa449dedef9a5c on 2026-11-13; no 2024 work, result or post asserted",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
@@ -1259,12 +1259,12 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed; prerequisites g06 and g08 remain unexecuted; no synthesis or result asserted",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "The workbook files were created 2026-11-13; historic release timing and prior analysis are not established. Average prices are not CPI price-change indices."
+      "unavailable_data_or_release_uncertainty": "Prerequisites g06 and g08 are still proposals without separate analyses. This fixed vintage ends in 2023-05; later prices and historical 2024 work are not established. Average prices are not CPI price-change indices."
     },
     {
       "coverage_date": "2024-05-08",
@@ -1494,12 +1494,12 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed; e01 quality exports already report missing markers, duplicate timestamps and daily coverage; no separate e02 execution or post asserted",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
+      "unavailable_data_or_release_uncertainty": "Static single-household archive; no weekly releases or price data. The proposed completeness checks overlap e01 outputs; no distinct additional result is evidenced."
     },
     {
       "coverage_date": "2024-07-10",
@@ -1623,17 +1623,17 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "retrospective hourly analysis executed; planned e02 remains uncompleted",
+      "evidence_status": "retrospective hourly analysis executed; e02 was not separately executed; refreshed hourly and quality exports are available",
       "publication_status": "excluded_draft; prepared locally, not published",
-      "actual_execution_date": "2026-11-24T13:08:19.682865-08:00",
+      "actual_execution_date": "2026-11-24T13:09:50.542628-08:00",
       "actual_publication_date": null,
-      "analysis_code_revision": null,
+      "analysis_code_revision": "2d94f2982173471a49379bcb45e537ebba23f35b",
+      "analysis_code_url": "https://github.com/dckodi-glitch/electricity-changes/blob/2d94f2982173471a49379bcb45e537ebba23f35b/analysis/household_power.py",
       "analysis_source_sha256": "ac056b355793410ea6a8206844051510a0a56350cb8051d99ebbcb4584c002c3",
-      "analysis_base_revision": "16e57642f3bb5fc21a62bc84f48550f83cbd9081",
       "input_data_revision": "929ed43064487e09fe69af58f5c43d5971fa14a4",
       "prepared_post": "site/drafts/electricity-2024-08-07.qmd",
-      "analysis_revision_availability": "Exact source snapshot identified by SHA-256; hourly code was uncommitted at execution and has no Git permalink.",
-      "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
+      "analysis_revision_availability": "Committed source revision and exact Git permalink available; source SHA-256 matches the preserved executed snapshot.",
+      "unavailable_data_or_release_uncertainty": "Static single-household archive; source timezone is unspecified and missing readings are excluded, not imputed. No weekly releases or price data."
     },
     {
       "coverage_date": "2024-08-14",

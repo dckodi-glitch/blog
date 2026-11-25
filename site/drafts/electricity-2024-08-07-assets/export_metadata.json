@@ -30,11 +30,11 @@
     "local_sha256": "9f84b46ade8a2d8e1286ec4b2b6c2987a45a755c59f263be3b3b3d10dfbda3ff"
   },
   "analysis_revision": {
-    "git_commit": "16e57642f3bb5fc21a62bc84f48550f83cbd9081",
-    "working_tree_dirty_at_execution": true,
+    "git_commit": "2d94f2982173471a49379bcb45e537ebba23f35b",
+    "working_tree_dirty_at_execution": false,
     "script_sha256": "ac056b355793410ea6a8206844051510a0a56350cb8051d99ebbcb4584c002c3"
   },
-  "execution_timestamp": "2026-11-24T13:08:19.682865-08:00",
+  "execution_timestamp": "2026-11-24T13:09:50.542628-08:00",
   "publication_date": null,
   "method": {
     "sampling": "One source row is expected per minute; timestamps must be minute-aligned and strictly increasing. Gaps are reported, not filled.",

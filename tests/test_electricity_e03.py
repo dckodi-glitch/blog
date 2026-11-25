@@ -41,13 +41,20 @@ class ElectricityE03Tests(unittest.TestCase):
         self.assertEqual(metadata["analysis_revision"]["script_sha256"], source_hash)
         self.assertEqual(entry["actual_execution_date"], metadata["execution_timestamp"])
         self.assertEqual(entry["input_data_revision"], metadata["input"]["input_commit"])
-        self.assertIsNone(entry["analysis_code_revision"])
+        self.assertEqual(entry["analysis_code_revision"], metadata["analysis_revision"]["git_commit"])
+        self.assertEqual(entry["analysis_code_revision"], "2d94f2982173471a49379bcb45e537ebba23f35b")
+        self.assertEqual(
+            entry["analysis_code_url"],
+            f"https://github.com/dckodi-glitch/electricity-changes/blob/{entry['analysis_code_revision']}/analysis/household_power.py",
+        )
+        self.assertFalse(metadata["analysis_revision"]["working_tree_dirty_at_execution"])
         self.assertIsNone(metadata["publication_date"])
         self.assertIsNone(entry["actual_publication_date"])
         post = (ROOT / entry["prepared_post"]).read_text()
         self.assertIn("draft: true", post)
         self.assertIn("publication-date: null", post)
         self.assertIn(source_hash, post)
+        self.assertIn(entry["analysis_code_url"], post)
 
 
 if __name__ == "__main__":

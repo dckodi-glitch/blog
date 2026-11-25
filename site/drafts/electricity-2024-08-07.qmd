@@ -8,7 +8,7 @@ draft: true
 
 **New retrospective analysis.** August 7, 2024 is a coverage label, not a
 work or publication date. This analysis ran on November 24, 2026 at
-13:08:19 UTC-08:00. This draft is not published; its publication date is
+13:09:50 UTC-08:00. This draft is not published; its publication date is
 unknown.
 
 ## The question
@@ -50,11 +50,13 @@ describes the coverage rule.
 
 The [analysis metadata](electricity-2024-08-07-assets/export_metadata.json)
 records the input archive revision and hash, observation period and actual
-execution timestamp. The [exact source snapshot](electricity-2024-08-07-assets/household_power.py)
-has SHA-256 `ac056b355793410ea6a8206844051510a0a56350cb8051d99ebbcb4584c002c3`.
-The code was uncommitted at execution, so its recorded Git HEAD identifies
-the base revision, not the complete executed code. A commit permalink for the
-hourly analysis is not yet available.
+execution timestamp. The
+[executed source revision](https://github.com/dckodi-glitch/electricity-changes/blob/2d94f2982173471a49379bcb45e537ebba23f35b/analysis/household_power.py)
+and the [preserved source snapshot](electricity-2024-08-07-assets/household_power.py)
+have SHA-256 `ac056b355793410ea6a8206844051510a0a56350cb8051d99ebbcb4584c002c3`.
+The code was committed before this execution, and the metadata records a clean
+working tree. The input archive is pinned to
+[revision `929ed43064487e09fe69af58f5c43d5971fa14a4`](https://github.com/dckodi-glitch/electricity-changes/commit/929ed43064487e09fe69af58f5c43d5971fa14a4).
 
 These aggregated measurements cannot identify appliance use, household
 behavior or savings. They do not establish current electricity prices or
