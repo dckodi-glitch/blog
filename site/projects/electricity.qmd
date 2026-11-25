@@ -38,4 +38,13 @@ was committed and clean at execution. The draft remains excluded with no
 publication date. The September 4, 2024 e04 weekday/weekend comparison is
 still proposed, with no results or post asserted.
 
+For the next coverage window, the January 1 e08 residual remains dependent on
+e07's pending submeter validation. The February 5 e09 seasonal comparison can
+reuse e01's complete-day flags and e03's hourly method, but no seasonal
+profiles exist yet; season boundaries must be declared, and the source
+timezone is unspecified. The March 5 e10 voltage distribution remains
+proposed because the current outputs contain no voltage analysis or
+missingness summary. None of e08–e10 has an execution date, result, or
+publication; their drafts remain excluded. The other ten coverage dates from
+December 11, 2024 through March 5, 2025 remain unassigned.
 [Return to the weekly archive](../archive.qmd)
