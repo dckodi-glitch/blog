@@ -29,6 +29,13 @@ inventory. Its prepared report remains an excluded draft with no publication
 date. A proposed follow-up uses only the course-presentation metadata table;
 it has not been run.
 
+The proposed April 1 registration audit is still unexecuted as a separate
+milestone: its key and missing-offset checks already appear in the l01
+retrospective output. That run reported 32,593 full-key registration matches,
+45 missing registration dates and 22,521 missing unregistration dates. Empty
+unregistration dates can describe students who completed the course, so they
+are not automatically errors. No second result or publication is claimed.
+
 ## Status
 
 Published entries will identify their observation window, limits and exact

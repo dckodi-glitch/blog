@@ -229,3 +229,29 @@ summary uses only `courses.csv` at the same input commit (blob
 `72e18220e9d3a6b6fe0bff2b137ccc6efa42efca`, 22 rows); no separate l02
 analysis or result exists. Both prepared posts remain excluded with null
 publication dates.
+
+## March–June 2026 editorial evidence
+
+A read-only GitHub check on 2026-11-27 found the online repository at
+`2859cb40d9a120a86eb12d7c1407cd2f80c66c01`, committed
+2026-11-23T06:35:01Z. The l01 analysis provenance records execution at
+2026-11-23T06:33:35.647869Z, with inputs pinned to
+`a51ba30520859201319ec9efc40142153fb68fc2`; its analysis source hash is
+`15f51eb8ee993090a0111f84b42e9bad701db5c7fb902d449f804c72742e0d7f`.
+These are separate execution, input and commit facts; none establishes work
+or publication on the 2026 coverage dates.
+
+The existing l01 aggregate quality output already reports the proposed l03
+registration checks: zero duplicate candidate keys, 32,593 matching
+`studentInfo`/`studentRegistration` composite keys, zero unmatched keys,
+45 missing `date_registration` values and 22,521 missing
+`date_unregistration` values. The prepared l01 retrospective discusses these
+checks and the missing-offset caveat. No distinct l03 run or result was found,
+so l03 remains an excluded proposal rather than a second claim on l01's run.
+The l03 records and code remain private inputs; only aggregate counts are
+described here. `studentVle.csv` was not accessed.
+
+The 13 coverage dates from 2026-03-11 through 2026-06-03 retain their existing
+status: ten unassigned and l03, l04 and l05 proposed, all with null execution
+and publication dates. No weekly source release is implied. The audit did not
+run repository code or create a new analysis.

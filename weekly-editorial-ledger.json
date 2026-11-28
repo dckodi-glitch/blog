@@ -3912,7 +3912,7 @@
         "l01"
       ],
       "observation_period": "OULAD 2013B\u20132014J presentations; platform CSV observation dates and collection methodology unknown",
-      "historical_cutoff": "OULAD snapshot donated 2015-12-20; platform dataset version 1 modified 2025-12-13; prediction features restricted to declared relative-day cutoff",
+      "historical_cutoff": "OULAD source donated 2015-12-20; input records pinned to online-changes commit a51ba30520859201319ec9efc40142153fb68fc2. No as-of prediction cutoff applies to this descriptive registration-quality audit.",
       "expected_evidence": "Disclosure-reviewed aggregate quality table.",
       "estimated_minutes": {
         "analysis": 60,
@@ -3920,12 +3920,12 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "Read-only inspection on 2026-11-27 found the relevant registration checks already in the l01 retrospective output: zero duplicate candidate keys, 32,593 full-key registration matches, zero unmatched registration keys, 45 missing registration dates and 22,521 missing unregistration dates. The l01 analysis ran at 2026-11-23T06:33:35.647869Z using input commit a51ba30520859201319ec9efc40142153fb68fc2 and analysis source later committed at 2859cb40d9a120a86eb12d7c1407cd2f80c66c01. No separate l03 analysis or result exists; retain l03 as an unexecuted proposal rather than claim the shared l01 run twice.",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "No learner clickstream is available or permitted. Platform source identity and methodology need verification. Keep learner-level records private; screen aggregate outputs for disclosure."
+      "unavailable_data_or_release_uncertainty": "OULAD registration offsets are relative to each 2013B–2014J presentation, not calendar dates. The source describes empty unregistration dates for students who completed the course, so missing offsets are not automatically errors. Keep learner-level records private; studentVle.csv is neither available nor permitted."
     },
     {
       "coverage_date": "2026-04-08",
