@@ -52,6 +52,10 @@ l08, and l11 milestones. Any comparison must keep platform provenance
 uncertainty explicit and publish no learner-level records or cross-dataset
 learner comparisons.
 
+No learning milestone is assigned to the March 10 through June 2, 2027
+coverage dates. The existing OULAD retrospective was executed on November 23,
+2026; it does not establish work on those later topic dates.
+
 ## Status
 
 Published entries will identify their observation window, limits and exact
