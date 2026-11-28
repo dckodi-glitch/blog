@@ -307,3 +307,28 @@ execution dates. Existing Kaggle metadata identifies version 1 modified
 the local CSV's exact identity or collection methodology. No l11 analysis or
 result is evidenced. The source CSV remains learner-level and is not included
 in the site. No `studentVle.csv` or repository code was accessed or executed.
+
+## December 2026–March 2027 editorial evidence
+
+The 13 coverage dates from 2026-12-09 through 2027-03-03 contain twelve
+unassigned weeks and one future excluded proposal, l12 on 2027-01-06. It has
+null execution and publication dates. Its prerequisites l04, l08 and l11
+remain proposals; no separate outputs for them are evidenced. No weekly
+release is implied.
+
+A read-only GitHub inspection on 2026-11-28 confirmed
+online-changes main at `2859cb40d9a120a86eb12d7c1407cd2f80c66c01`. Its OULAD
+retrospective uses inputs pinned to `a51ba30520859201319ec9efc40142153fb68fc2`;
+the analysis file is blob `40350a025a6f222db6f73e283de13e080463baa0`, and
+its provenance records execution at `2026-11-23T06:33:35.647869Z`. The
+existing output is descriptive and aggregate-only; it does not train a model
+or compare platforms. This executed l01 analysis is prior evidence, not an
+l12 execution or a result on the coverage date.
+
+The platform dataset remains a separate source: Kaggle version 1 was modified
+2025-12-13, and the linked notebook was published 2025-12-26, but the local
+CSV's exact identity, collection period and methodology are unverified. No
+OULAD/platform learner join is supported. Keep l12 excluded until the
+prerequisites and platform provenance are addressed; use only aggregate OULAD
+outputs and publish source limitations, not learner-level records. No
+`studentVle.csv` or repository code was accessed or executed for this audit.

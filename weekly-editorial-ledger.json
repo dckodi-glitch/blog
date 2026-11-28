@@ -4964,8 +4964,10 @@
       "proposed_question": "How do these sources differ in scope and evidence quality?",
       "small_milestone": "Synthesize OULAD and platform-data limitations without comparing individual learners.",
       "required_inputs": [
-        "online-changes:diff_data/courses.csv",
-        "online-changes:diff_data/studentInfo.csv",
+        "online-changes:oulad/README.md",
+        "online-changes:oulad/output/data_quality.json",
+        "online-changes:oulad/output/final_results.csv",
+        "online-changes:oulad/output/provenance.json",
         "online-changes:online_learning_course_consumption_dataset.csv",
         "online-changes:learningWebsites.ipynb"
       ],
@@ -4975,20 +4977,20 @@
         "l11"
       ],
       "observation_period": "OULAD 2013B\u20132014J presentations; platform CSV observation dates and collection methodology unknown",
-      "historical_cutoff": "OULAD snapshot donated 2015-12-20; platform dataset version 1 modified 2025-12-13; prediction features restricted to declared relative-day cutoff",
-      "expected_evidence": "Source-comparison and limitations table.",
+      "historical_cutoff": "No prediction cutoff applies to this source-comparison proposal. OULAD source donated 2015-12-20; l01 inputs are pinned to online-changes commit a51ba30520859201319ec9efc40142153fb68fc2; its analysis file blob 40350a025a6f222db6f73e283de13e080463baa0 is in commit 2859cb40d9a120a86eb12d7c1407cd2f80c66c01 and its provenance records execution on 2026-11-23. Platform dataset version 1 was modified 2025-12-13; local collection date and methodology are unknown.",
+      "expected_evidence": "Aggregate-only source-comparison and limitations table; unresolved platform identity and methodology remain explicit.",
       "estimated_minutes": {
         "analysis": 60,
         "validation": 25,
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "Read-only GitHub inspection on 2026-11-28 confirmed existing OULAD aggregate and provenance outputs in online-changes main at 2859cb40d9a120a86eb12d7c1407cd2f80c66c01; no separate l12 comparison result is evidenced. Keep l12 as an excluded proposal; the platform dataset's exact identity and collection methodology remain unverified.",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "No learner clickstream is available or permitted. Platform source identity and methodology need verification. Keep learner-level records private; screen aggregate outputs for disclosure."
+      "unavailable_data_or_release_uncertainty": "Prerequisites l04, l08 and l11 remain unexecuted proposals; the platform CSV's exact source identity, collection period and methodology are unverified. Keep learner-level inputs private, use aggregate outputs only, and do not assume a weekly data release."
     },
     {
       "coverage_date": "2027-01-13",

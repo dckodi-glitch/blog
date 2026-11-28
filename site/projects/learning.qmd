@@ -46,6 +46,12 @@ remain excluded proposals. No predictive model, evaluation result, or platform
 ranking is claimed; the platform dataset's collection method and exact source
 identity remain unverified.
 
+A future l12 source comparison remains an excluded proposal. It can reuse
+existing OULAD aggregate outputs, but it depends on the still-unexecuted l04,
+l08, and l11 milestones. Any comparison must keep platform provenance
+uncertainty explicit and publish no learner-level records or cross-dataset
+learner comparisons.
+
 ## Status
 
 Published entries will identify their observation window, limits and exact
