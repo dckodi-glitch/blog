@@ -38,6 +38,25 @@ was committed and clean at execution. The draft remains excluded with no
 publication date. The September 4, 2024 e04 weekday/weekend comparison is
 still proposed, with no results or post asserted.
 
+The public electricity repository history begins on November 13, 2026; it
+does not establish when work outside GitHub occurred. At source snapshot
+[`e69fadb`](https://github.com/dckodi-glitch/electricity-changes/tree/e69fadb3089e96e8dd9ea812559d840dddf13d6c),
+the committed exports include daily active-energy and coverage data
+byte-identical to e01's, plus the e03 hourly profile, but no monthly
+aggregation or submeter summary.
+
+The October 2, 2024 e05 proposal now reuses e01's daily CSV, metadata and
+quality summary to aggregate monthly energy and flag partial boundary or
+incomplete months; no monthly result is claimed. The November 6 e06 proposal
+uses the same daily export for a distinct complete-day distribution and
+excluded-day count, rather than recalculating daily energy. The December 4
+e07 proposal remains planned: the current analysis outputs do not summarize
+the three submetering channels, whose units and missingness still need
+validation. None of e05–e07 has a verified execution date or publication;
+their posts remain excluded. The other ten coverage dates from September 11
+through December 4, 2024 remain unassigned because no distinct weekly
+milestone is supported.
+
 For the next coverage window, the January 1 e08 residual remains dependent on
 e07's pending submeter validation. The February 5 e09 seasonal comparison can
 reuse e01's complete-day flags and e03's hourly method, but no seasonal
@@ -58,5 +77,13 @@ proposed and must distinguish supported observations for this household
 from claims about other homes or current conditions. Neither e11 nor e12 has
 a verified execution or publication date. The other eleven coverage dates
 from March 12 through June 4, 2025 remain unassigned.
+
+The public electricity repository still points to snapshot
+[`e69fadb`](https://github.com/dckodi-glitch/electricity-changes/tree/e69fadb3089e96e8dd9ea812559d840dddf13d6c),
+whose outputs include only the daily coverage/energy export and the
+all-period hourly active-power profile. No distinct source output supports a
+new milestone for June 11 through September 3, 2025, so all 13 coverage
+dates remain unassigned. This is a gap in available public evidence, not
+proof that no work occurred outside GitHub.
 
 [Return to the weekly archive](../archive.qmd)

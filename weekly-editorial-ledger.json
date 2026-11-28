@@ -1820,28 +1820,30 @@
       "slot_status": "proposed_milestone",
       "milestone_id": "e05",
       "proposed_question": "How do monthly energy totals differ after accounting for missing minutes?",
-      "small_milestone": "Convert valid minute-average power to energy and flag incomplete months.",
+      "small_milestone": "Aggregate e01 daily kWh and valid/expected minute counts by calendar month; flag partial boundary and incomplete months without imputing.",
       "required_inputs": [
-        "electricity-changes:individual+household+electric+power+consumption.zip"
+        "blog:site/drafts/electricity-2024-06-05-assets/daily_consumption.csv",
+        "blog:site/drafts/electricity-2024-06-05-assets/export_metadata.json",
+        "blog:site/drafts/electricity-2024-06-05-assets/quality_summary.json"
       ],
       "prerequisites": [
-        "e02"
+        "e01"
       ],
       "observation_period": "2006-12-16 17:24 through 2010-11-26 21:02",
       "historical_cutoff": "Last dataset timestamp 2010-11-26 21:02; UCI donation 2012-08-29",
-      "expected_evidence": "Monthly energy table and completeness indicators.",
+      "expected_evidence": "Monthly kWh and valid-coverage table or chart; distinguish partial boundary months.",
       "estimated_minutes": {
         "analysis": 60,
         "validation": 25,
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed retrospective; source snapshot e69fadb3089e96e8dd9ea812559d840dddf13d6c contains daily aggregates but no monthly aggregation; no e05 execution or result is evidenced, and public history does not establish 2024 work",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
+      "unavailable_data_or_release_uncertainty": "Static one-household dataset; monthly completeness must compare valid minutes with full calendar-month expectations, including partial boundary months. No weekly releases or tariff data."
     },
     {
       "coverage_date": "2024-10-09",
@@ -1949,28 +1951,30 @@
       "slot_status": "proposed_milestone",
       "milestone_id": "e06",
       "proposed_question": "What does the distribution of daily household energy look like?",
-      "small_milestone": "Compute daily energy only under a declared completeness rule.",
+      "small_milestone": "Use e01 daily output to summarize complete-day active energy and count partial or incomplete days, without recomputing daily totals.",
       "required_inputs": [
-        "electricity-changes:individual+household+electric+power+consumption.zip"
+        "blog:site/drafts/electricity-2024-06-05-assets/daily_consumption.csv",
+        "blog:site/drafts/electricity-2024-06-05-assets/export_metadata.json",
+        "blog:site/drafts/electricity-2024-06-05-assets/quality_summary.json"
       ],
       "prerequisites": [
-        "e05"
+        "e01"
       ],
       "observation_period": "2006-12-16 17:24 through 2010-11-26 21:02",
       "historical_cutoff": "Last dataset timestamp 2010-11-26 21:02; UCI donation 2012-08-29",
-      "expected_evidence": "Daily energy distribution and excluded-day count.",
+      "expected_evidence": "Distribution chart of complete-day kWh and the count of excluded partial or incomplete days.",
       "estimated_minutes": {
         "analysis": 60,
         "validation": 25,
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed retrospective; e01 already produced daily energy and coverage (execution 2026-11-14T14:30:55.191723-08:00 from a dirty tree based at 929ed43064487e09fe69af58f5c43d5971fa14a4; source snapshot SHA-256 ae46f2abe167f4d5d14395829ee3e542c7af04bb84397fbd46cbf45149a5cd37, later committed as 16e57642f3bb5fc21a62bc84f48550f83cbd9081; input revision 929ed43064487e09fe69af58f5c43d5971fa14a4); no separate e06 distribution or 2024 work is evidenced",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
+      "unavailable_data_or_release_uncertainty": "Static one-household dataset; apply the stated complete-day rule and report excluded days. No weekly releases or tariff data."
     },
     {
       "coverage_date": "2024-11-13",
@@ -2053,28 +2057,28 @@
       "slot_status": "proposed_milestone",
       "milestone_id": "e07",
       "proposed_question": "How do the three submetering channels compare?",
-      "small_milestone": "Summarize measured channel energy while keeping units and missingness explicit.",
+      "small_milestone": "Validate submeter-channel units and missingness, then compare aggregate channel totals and coverage without inferring appliance use.",
       "required_inputs": [
         "electricity-changes:individual+household+electric+power+consumption.zip"
       ],
       "prerequisites": [
-        "e02"
+        "e01"
       ],
       "observation_period": "2006-12-16 17:24 through 2010-11-26 21:02",
       "historical_cutoff": "Last dataset timestamp 2010-11-26 21:02; UCI donation 2012-08-29",
-      "expected_evidence": "Submetering summary chart.",
+      "expected_evidence": "Aggregate per-channel comparison with validated units and coverage; no raw readings.",
       "estimated_minutes": {
         "analysis": 60,
         "validation": 25,
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed retrospective; source snapshot e69fadb3089e96e8dd9ea812559d840dddf13d6c has active-power outputs but no submeter-channel analysis or results; no e07 execution or 2024 work is evidenced",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Static single-household archive; time convention and missing-value handling must be verified before analysis; no weekly releases or price data."
+      "unavailable_data_or_release_uncertainty": "Static one-household dataset; submeter-channel units and missingness still require validation. No weekly releases or tariff data; do not infer appliance use or household behavior."
     },
     {
       "coverage_date": "2024-12-11",
