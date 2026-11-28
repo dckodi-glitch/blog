@@ -3193,7 +3193,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed from read-only review of fantasy-changes snapshot 8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb; source filenames and result-week labels are mapped in the existing f02 draft, but no separate f01 inventory milestone or historical 2025 execution is evidenced",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
@@ -3237,9 +3237,7 @@
         "fantasy-changes:Defense6.csv",
         "fantasy-changes:Defense7.csv"
       ],
-      "prerequisites": [
-        "f01"
-      ],
+      "prerequisites": [],
       "observation_period": "Prior-week inputs and corresponding outcome week as specified by the milestone; exact season provenance to confirm",
       "historical_cutoff": "For each matchup use only inputs available before its outcome week; exact timestamps are unverified",
       "expected_evidence": "Notebook section and exclusion table.",
@@ -3249,7 +3247,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "retrospective source inspection completed; saved notebook outputs not rerun or revalidated; planned f01 remains uncompleted",
+      "evidence_status": "read-only retrospective source inspection completed 2026-11-24 at snapshot 8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb; no notebook cells were executed; 16 code cells have saved outputs with null execution counts, and the sole non-null count (3) is on a cell with no outputs, so outputs have no verified run date or input snapshot",
       "publication_status": "excluded_draft; prepared locally, not published",
       "actual_execution_date": "2026-11-24T13:11:48-08:00",
       "actual_publication_date": null,
@@ -3309,7 +3307,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed; snapshot 8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb contains the candidate WR6/Defense6 inputs and a 100-row WR6Results export labeled WK=7; no join validation or comparison was executed and no historical 2025 execution is evidenced",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
@@ -3365,7 +3363,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed; candidate Week 7 source and outcome files are present at snapshot 8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb, but no comparison was executed; remains dependent on f03 join validation and no historical 2025 execution is evidenced",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
@@ -3421,7 +3419,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed; snapshot 8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb contains the candidate WR8/Defense8 inputs and a 100-row WR8Results export labeled WK=9; no join validation or comparison was executed and no historical 2025 execution is evidenced",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,

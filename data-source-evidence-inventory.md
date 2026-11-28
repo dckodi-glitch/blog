@@ -131,6 +131,22 @@ explicitly when parsing; do not silently overwrite fields. Results counts are
 separate 2024 source and cannot substitute for unavailable 2025 slot/wide
 splits. Validate player joins, exclusions and matching before analysis.
 
+A read-only inspection on 2026-11-24 used the fantasy repository's `main`
+snapshot `8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb` (GitHub commit timestamp
+2026-11-23T06:28:13Z). At that revision, `README.md` is blob
+`8a490a3c47d8154c0c7dc7edd0bd734a07fb328d` and
+`Fantasy_Football_Project.ipynb` is blob
+`7351372877f6d3ec57aee08c7282fa019899ebd1`. The notebook JSON contains 33
+cells, including 19 code cells. Sixteen code cells have saved outputs but
+`execution_count: null`; the one code cell with a non-null count (3) has no
+outputs. No notebook cells were run during this inspection, so saved outputs
+do not establish an execution date, input snapshot or reproducible result.
+Available result files were parsed read-only: WR6Results, WR7Results and
+WR8Results each contain 100 rows labeled `WK=7`, `WK=8` and `WK=9`;
+WR9Results has 99 rows labeled `WK=10`; WR10Results has 100 rows labeled
+`WK=11`. These labels and counts support a source map, not a projection
+comparison or evidence of when the files became available.
+
 ## Learning data and notebook evidence
 
 The OULAD source is [UCI dataset 349](https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset),

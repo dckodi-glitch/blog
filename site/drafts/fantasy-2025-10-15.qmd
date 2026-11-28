@@ -32,8 +32,10 @@ is present.
 These filenames indicate intended projection weeks; they do **not** prove
 the source data's season or publication time. The original project describes
 the work as 2025, but snapshot availability dates and cutoff times are
-unverified. Saved notebook outputs are historical evidence, not results
-revalidated by this inspection.
+unverified. The notebook JSON has 19 code cells: 16 contain saved outputs with
+null execution counts, and the sole non-null execution count (3) is on a cell
+with no outputs. No cells were run during this inspection, so the saved outputs
+do not establish an execution date, input snapshot or reproducible result.
 
 ## Why exclude the Week 8 matchup?
 
