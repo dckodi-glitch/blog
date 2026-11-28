@@ -15,6 +15,13 @@ making a comparison. The original 2025 Week 8 matchup analysis is excluded:
 its defense file duplicates the prior week's file. Missing slot/wide inputs
 will not be reconstructed.
 
+Read-only inspection of fantasy-changes snapshot
+`8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb` confirmed file-to-outcome-week
+labels, but not the source season or release times. The notebook's saved
+outputs have no verified execution metadata; this batch ran no notebook cells
+and performed no new joins or matchup comparisons. The repository evidence
+inventory records the exact source hashes and review date.
+
 ## Status
 
 Published analyses will explain their cutoff, exclusions and exact code
