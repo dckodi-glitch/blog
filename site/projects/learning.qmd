@@ -19,6 +19,16 @@ so it cannot establish which platform is best.
 The site will publish privacy-reviewed aggregates only. Learner-level records
 and clickstream data are outside the published site.
 
+The existing OULAD inventory was executed retrospectively on November 23,
+2026 using input commit
+[`a51ba30`](https://github.com/dckodi-glitch/online-changes/tree/a51ba30520859201319ec9efc40142153fb68fc2).
+Its analysis file's recorded hash was later committed as
+[`2859cb4`](https://github.com/dckodi-glitch/online-changes/blob/2859cb40d9a120a86eb12d7c1407cd2f80c66c01/oulad/analyze.py);
+the exact execution timestamp and hashes are recorded in the source
+inventory. Its prepared report remains an excluded draft with no publication
+date. A proposed follow-up uses only the course-presentation metadata table;
+it has not been run.
+
 ## Status
 
 Published entries will identify their observation window, limits and exact
