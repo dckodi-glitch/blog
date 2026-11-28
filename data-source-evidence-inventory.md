@@ -195,3 +195,37 @@ Verify fantasy season, original split-source definitions and input release
 dates; confirm course-platform dataset identity and collection methodology;
 and check exact source licensing and privacy policy before publication.
 Unassigned ledger slots are missing evidence, not implicit completed work.
+
+## December 2025–March 2026 editorial evidence
+
+The fantasy review uses repository snapshot
+`8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb`. It contains the candidate
+`WR9.csv`/`Defense9.csv` inputs and `WR9Results.csv` with 99 rows labeled
+`WK=10`, and `WR10.csv`/`Defense10.csv` with `WR10Results.csv` containing
+100 rows labeled `WK=11`. These files support proposed availability checks,
+not new comparisons; the source season and release times remain unknown.
+`WR12.csv` and `Defense12.csv` exist at this revision, while `WR11.csv`,
+`Defense11.csv` and `WR12Results.csv` do not. Do not reconstruct missing
+Week 12 splits or Week 13 outcomes.
+
+The existing f09 2024 prior-game baseline was executed
+`2026-11-23T06:25:57.554413Z` using input commit
+`1c0f7b29ff332313cc4d27eb28d1ac635fa31e9f` (dataset SHA-256
+`3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759`).
+Its analysis file hash is
+`c04fadf3aaf58cdb99ee281149b5f3a33815ee325e13d8c2eaa4cc9a74ceece6`,
+later committed at `8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb`; this is a
+2024 retrospective, not an evaluation of the original 2025 projections.
+Its prepared post remains excluded and unpublished.
+
+The existing l01 OULAD descriptive inventory was executed
+`2026-11-23T06:33:35.647869Z` from input commit
+`a51ba30520859201319ec9efc40142153fb68fc2`; its analysis file hash is
+`15f51eb8ee993090a0111f84b42e9bad701db5c7fb902d449f804c72742e0d7f`,
+later committed at `2859cb40d9a120a86eb12d7c1407cd2f80c66c01`. The public
+draft assets contain aggregates, quality metadata and provenance only; no
+learner-level export or `studentVle.csv` is included. The proposed l02
+summary uses only `courses.csv` at the same input commit (blob
+`72e18220e9d3a6b6fe0bff2b137ccc6efa42efca`, 22 rows); no separate l02
+analysis or result exists. Both prepared posts remain excluded with null
+publication dates.

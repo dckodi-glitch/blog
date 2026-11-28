@@ -3479,12 +3479,12 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed; fantasy-changes snapshot 8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb contains the candidate WR9/Defense9 inputs and WR9Results (99 rows labeled WK=10); no join validation or comparison was executed and no historical 2025 execution is evidenced",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Exclude original 2025 Week 8 matchup: Defense7 duplicates Defense6. Week 12 split inputs and Week 13 result file absent; do not reconstruct splits. Season and release timestamps need verification."
+      "unavailable_data_or_release_uncertainty": "The input season and availability time are unverified, so no historical cutoff can be established. Exclude original 2025 Week 8 matchup; do not infer missing outcomes or reconstruct Week 12 splits."
     },
     {
       "coverage_date": "2025-12-17",
@@ -3535,12 +3535,12 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed; fantasy-changes snapshot 8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb contains the candidate WR10/Defense10 inputs and WR10Results (100 rows labeled WK=11); no cutoff validation or comparison was executed and no historical 2025 execution is evidenced",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Exclude original 2025 Week 8 matchup: Defense7 duplicates Defense6. Week 12 split inputs and Week 13 result file absent; do not reconstruct splits. Season and release timestamps need verification."
+      "unavailable_data_or_release_uncertainty": "The input season and availability time are unverified, so no historical cutoff can be established. Exclude original 2025 Week 8 matchup; do not infer missing outcomes or reconstruct Week 12 splits."
     },
     {
       "coverage_date": "2025-12-31",
@@ -3591,12 +3591,12 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed availability audit at fantasy-changes snapshot 8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb: WR12.csv and Defense12.csv exist, while WR11.csv, Defense11.csv and WR12Results.csv are absent; no f08 execution or result is asserted",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "Exclude original 2025 Week 8 matchup: Defense7 duplicates Defense6. Week 12 split inputs and Week 13 result file absent; do not reconstruct splits. Season and release timestamps need verification."
+      "unavailable_data_or_release_uncertainty": "The input season and availability time are unverified. Week 12 split inputs and the Week 13 result file are absent at the cited snapshot; do not reconstruct unavailable data or outcomes."
     },
     {
       "coverage_date": "2026-01-14",
@@ -3806,21 +3806,21 @@
       "prerequisites": [
         "l01"
       ],
-      "observation_period": "OULAD 2013B\u20132014J presentations; platform CSV observation dates and collection methodology unknown",
-      "historical_cutoff": "OULAD snapshot donated 2015-12-20; platform dataset version 1 modified 2025-12-13; prediction features restricted to declared relative-day cutoff",
-      "expected_evidence": "Course-presentation metadata table.",
+      "observation_period": "OULAD course presentations 2013B\u20132014J; module presentation length is measured in course-relative days, not calendar dates.",
+      "historical_cutoff": "OULAD source donated 2015-12-20; input courses.csv is pinned to commit a51ba30520859201319ec9efc40142153fb68fc2. No as-of prediction cutoff applies to this descriptive metadata summary.",
+      "expected_evidence": "Aggregate 22-row module-presentation metadata table from courses.csv; no learner records.",
       "estimated_minutes": {
         "analysis": 60,
         "validation": 25,
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "proposed; courses.csv at online-changes commit a51ba30520859201319ec9efc40142153fb68fc2 (blob 72e18220e9d3a6b6fe0bff2b137ccc6efa42efca) provides 22 course-presentation rows; no separate l02 analysis or result is evidenced",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "No learner clickstream is available or permitted. Platform source identity and methodology need verification. Keep learner-level records private; screen aggregate outputs for disclosure."
+      "unavailable_data_or_release_uncertainty": "This proposal needs only course metadata; learner records and studentVle.csv are not inputs. No weekly source release is implied."
     },
     {
       "coverage_date": "2026-03-11",

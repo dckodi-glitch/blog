@@ -22,6 +22,14 @@ outputs have no verified execution metadata; this batch ran no notebook cells
 and performed no new joins or matchup comparisons. The repository evidence
 inventory records the exact source hashes and review date.
 
+An existing retrospective baseline using 2024 receiver statistics was
+executed on November 23, 2026 (input commit
+[`1c0f7b2`](https://github.com/dckodi-glitch/fantasy-changes/tree/1c0f7b29ff332313cc4d27eb28d1ac635fa31e9f);
+analysis file hash recorded in its provenance and later committed as
+[`8ca3bba`](https://github.com/dckodi-glitch/fantasy-changes/blob/8ca3bba8504b00649b8d3dcc6bfde30cdb7f17eb/retrospective_2024.py)).
+It is a separate 2024 retrospective, not an evaluation of the original 2025
+matchup projections. Its prepared post remains excluded and unpublished.
+
 ## Status
 
 Published analyses will explain their cutoff, exclusions and exact code
