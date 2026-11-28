@@ -332,3 +332,25 @@ OULAD/platform learner join is supported. Keep l12 excluded until the
 prerequisites and platform provenance are addressed; use only aggregate OULAD
 outputs and publish source limitations, not learner-level records. No
 `studentVle.csv` or repository code was accessed or executed for this audit.
+
+## March–June 2027 editorial evidence
+
+The 13 coverage dates from 2027-03-10 through 2027-06-02 remain unassigned.
+Their coverage labels do not establish execution dates, publication dates, or
+weekly data releases. No distinct historical evidence or planned milestone
+supports assigning work to these dates.
+
+The current online-changes main snapshot remains
+`2859cb40d9a120a86eb12d7c1407cd2f80c66c01` (committed
+2026-11-23T06:35:01Z). Its l01 OULAD retrospective used input commit
+`a51ba30520859201319ec9efc40142153fb68fc2`, analysis blob
+`40350a025a6f222db6f73e283de13e080463baa0`, and records execution at
+`2026-11-23T06:33:35.647869Z`. That descriptive analysis is existing
+retrospective evidence, not work on the 2027 coverage labels.
+
+The l03 proposal is dated 2026-04-01, outside this batch; its registration
+checks overlap the l01 results, but no separate l03 run is evidenced. The
+l04 and l05 proposals are dated 2026-05-06 and 2026-06-03, also outside this
+batch, and remain unexecuted. They were not reassigned to the 2027 dates.
+No `studentVle.csv`, learner-level output, or repository code was accessed
+or executed for this batch.
