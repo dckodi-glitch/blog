@@ -4628,7 +4628,7 @@
         "l08"
       ],
       "observation_period": "OULAD 2013B\u20132014J presentations; platform CSV observation dates and collection methodology unknown",
-      "historical_cutoff": "OULAD snapshot donated 2015-12-20; platform dataset version 1 modified 2025-12-13; prediction features restricted to declared relative-day cutoff",
+      "historical_cutoff": "OULAD source donated 2015-12-20; input records pinned to online-changes commit a51ba30520859201319ec9efc40142153fb68fc2. No presentation-relative prediction cutoff or split has been selected; determine both before fitting and exclude unavailable future fields.",
       "expected_evidence": "Aggregate baseline score and sample-size table.",
       "estimated_minutes": {
         "analysis": 60,
@@ -4636,7 +4636,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "Read-only inspection on 2026-11-27 found online-changes main at 2859cb40d9a120a86eb12d7c1407cd2f80c66c01, with no baseline model, declared evaluation split or l09 result in the repository tree. The existing l01 descriptive and l07 timing analyses are not baseline predictions. Retain l09 as an excluded proposal with null execution and publication dates.",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
@@ -4736,7 +4736,7 @@
         "l09"
       ],
       "observation_period": "OULAD 2013B\u20132014J presentations; platform CSV observation dates and collection methodology unknown",
-      "historical_cutoff": "OULAD snapshot donated 2015-12-20; platform dataset version 1 modified 2025-12-13; prediction features restricted to declared relative-day cutoff",
+      "historical_cutoff": "OULAD source donated 2015-12-20; input records pinned to online-changes commit a51ba30520859201319ec9efc40142153fb68fc2. Define the same leakage-safe relative-day cutoff and predeclare candidate splits before any evaluation.",
       "expected_evidence": "Suppressed evaluation sensitivity table.",
       "estimated_minutes": {
         "analysis": 60,
@@ -4744,7 +4744,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "Read-only inspection on 2026-11-27 found online-changes main at 2859cb40d9a120a86eb12d7c1407cd2f80c66c01, with no baseline evaluation, split-sensitivity output or l10 result in the repository tree. Retain l10 as an excluded proposal dependent on a separately specified l09 baseline; no execution or publication is asserted.",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
@@ -4840,8 +4840,8 @@
       "prerequisites": [
         "l01"
       ],
-      "observation_period": "OULAD 2013B\u20132014J presentations; platform CSV observation dates and collection methodology unknown",
-      "historical_cutoff": "OULAD snapshot donated 2015-12-20; platform dataset version 1 modified 2025-12-13; prediction features restricted to declared relative-day cutoff",
+      "observation_period": "Online course-platform CSV; collection period and observation dates are unknown.",
+      "historical_cutoff": "online-changes main snapshot 2859cb40d9a120a86eb12d7c1407cd2f80c66c01 contains CSV blob e322129ca2435c886e7eb86cf4e2bd8174796b63 and notebook blob 87a3080ae78f69b7d61fbb9aec35d80c1cb8a2a1. Kaggle version 1 was modified 2025-12-13, but collection date and exact identity with the repository file remain unverified.",
       "expected_evidence": "Source limitations and disclosure-reviewed counts.",
       "estimated_minutes": {
         "analysis": 60,
@@ -4849,7 +4849,7 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "Read-only GitHub metadata inspection on 2026-11-27 confirmed online_learning_course_consumption_dataset.csv (blob e322129ca2435c886e7eb86cf4e2bd8174796b63) and learningWebsites.ipynb (blob 87a3080ae78f69b7d61fbb9aec35d80c1cb8a2a1) in online-changes main at 2859cb40d9a120a86eb12d7c1407cd2f80c66c01; no separate l11 analysis or result exists. Existing source-page dates do not establish local collection methodology or exact dataset identity. Retain l11 as an excluded proposal; do not publish learner-level rows.",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
