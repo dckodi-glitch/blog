@@ -4252,8 +4252,8 @@
         "l05",
         "l03"
       ],
-      "observation_period": "OULAD 2013B\u20132014J presentations; platform CSV observation dates and collection methodology unknown",
-      "historical_cutoff": "OULAD snapshot donated 2015-12-20; platform dataset version 1 modified 2025-12-13; prediction features restricted to declared relative-day cutoff",
+      "observation_period": "OULAD 2013B\u20132014J presentations; submission and deadline days are relative to each presentation start.",
+      "historical_cutoff": "OULAD source donated 2015-12-20; planned table inputs can be pinned to online-changes commit a51ba30520859201319ec9efc40142153fb68fc2. No as-of prediction cutoff applies to this descriptive completeness audit.",
       "expected_evidence": "Disclosure-reviewed aggregate coverage table.",
       "estimated_minutes": {
         "analysis": 60,
@@ -4261,12 +4261,12 @@
         "writing": 35,
         "total": 120
       },
-      "evidence_status": "proposed; no execution or result asserted",
+      "evidence_status": "Read-only review on 2026-11-27 found the proposed checks overlap existing l01 and l07 outputs: l01 reports 173,912 submissions, zero duplicate candidate keys or unmatched submission joins, 173 missing scores and zero missing submission-day values; l07 separately reports submission timing and exclusions. l01 ran 2026-11-23T06:33:35.647869Z using input a51ba30520859201319ec9efc40142153fb68fc2 and analysis revision 2859cb40d9a120a86eb12d7c1407cd2f80c66c01. l07 ran 2026-11-24T21:25:57.550922Z using input 9f2ff2d60ef4ffa09f3fa763ac000b7c9a512ab0; its uncommitted timing source is recorded by Git blob ae0c4d5947637a8a451dc4a85ae1451c2053feba and SHA-256 fc44d12f3632706f3a5eb0b4b7ca05484567d461c86d85e62bc8fe2850aaa448. No distinct l06 analysis or result exists; retain l06 as an unexecuted proposal rather than claim either existing run as l06.",
       "publication_status": "excluded_draft; no post created",
       "actual_execution_date": null,
       "actual_publication_date": null,
       "analysis_code_revision": null,
-      "unavailable_data_or_release_uncertainty": "No learner clickstream is available or permitted. Platform source identity and methodology need verification. Keep learner-level records private; screen aggregate outputs for disclosure."
+      "unavailable_data_or_release_uncertainty": "No learner clickstream is available or permitted. Keep learner-level records private and use only aggregate, disclosure-reviewed outputs. Submission and due-date offsets are course-relative, not calendar dates. studentVle.csv is neither available nor permitted."
     },
     {
       "coverage_date": "2026-07-08",
@@ -4379,9 +4379,7 @@
         "online-changes:diff_data/assessments.csv",
         "online-changes:diff_data/studentAssessment.csv"
       ],
-      "prerequisites": [
-        "l06"
-      ],
+      "prerequisites": [],
       "observation_period": "OULAD 2013B\u20132014J presentations; platform CSV observation dates and collection methodology unknown",
       "historical_cutoff": "OULAD snapshot donated 2015-12-20; no historical as-of cutoff applied to this descriptive analysis. The platform study is separate.",
       "expected_evidence": "Suppressed aggregate timing distribution.",
