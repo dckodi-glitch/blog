@@ -107,6 +107,13 @@ sensitivity result. e12 remains a proposed synthesis dependent on e05, e08
 and e11, whose aggregate deliverables are not present at this snapshot. No
 repository code was run for this follow-up.
 
+A read-only check on 2026-11-24 confirmed the electricity repository remains
+at snapshot `e69fadb3089e96e8dd9ea812559d840dddf13d6c` with the same six
+files in `outputs/`. No additional output or public-history evidence supports
+assigning a distinct milestone to the 13 coverage dates from June 11 through
+September 3, 2025. This is an evidence gap, not proof that no off-platform
+work occurred.
+
 ## Fantasy: week mapping and exclusions
 
 The README says input filenames name the number of weeks already observed.
