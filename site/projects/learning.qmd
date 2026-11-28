@@ -36,6 +36,11 @@ retrospective output. That run reported 32,593 full-key registration matches,
 unregistration dates can describe students who completed the course, so they
 are not automatically errors. No second result or publication is claimed.
 
+The July 1 l06 assessment-completeness proposal remains unexecuted as a
+separate milestone. Its join and missing-score checks overlap the l01
+retrospective, while l07 separately summarizes submission timing. No distinct
+l06 analysis or publication is claimed.
+
 ## Status
 
 Published entries will identify their observation window, limits and exact

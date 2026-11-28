@@ -255,3 +255,29 @@ The 13 coverage dates from 2026-03-11 through 2026-06-03 retain their existing
 status: ten unassigned and l03, l04 and l05 proposed, all with null execution
 and publication dates. No weekly source release is implied. The audit did not
 run repository code or create a new analysis.
+
+## June–September 2026 editorial evidence
+
+The 13 coverage dates from 2026-06-10 through 2026-09-02 contain ten
+unassigned weeks, the l06 and l08 proposals, and the existing l07 retrospective.
+The l06 proposal asks for assessment joins, submission offsets and score
+completeness. The l01 quality output already reports 173,912 submission rows,
+zero duplicate candidate keys, zero missing assessment or enrollment joins,
+173 missing scores and zero missing submission-day values. The separate l07
+retrospective reports relative submission timing and excludes 1,909 banked
+records, 2,865 missing-deadline records and zero missing-submission-day
+records. The existing outputs cover these checks; no distinct l06 analysis
+or result was found, so l06 remains excluded and unexecuted.
+
+The l07 draft records execution at `2026-11-24T21:25:57.550922+00:00`, using
+input commit `9f2ff2d60ef4ffa09f3fa763ac000b7c9a512ab0`. Its timing source was
+uncommitted at execution; the recorded Git blob is
+`ae0c4d5947637a8a451dc4a85ae1451c2053feba` and its SHA-256 is
+`fc44d12f3632706f3a5eb0b4b7ca05484567d461c86d85e62bc8fe2850aaa448`. The
+draft remains excluded with null publication date. The OULAD input source is
+donated 2015-12-20 and describes 2013B–2014J presentations; relative day
+offsets are not calendar dates. No `studentVle.csv` or learner-level export
+was accessed or added. The l07 method validates assessment and enrollment
+keys itself, so it does not depend on a separate l06 result. This audit used
+repository metadata and existing aggregate outputs; it did not run repository
+code.
