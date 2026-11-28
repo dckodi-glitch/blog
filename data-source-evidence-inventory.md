@@ -281,3 +281,29 @@ was accessed or added. The l07 method validates assessment and enrollment
 keys itself, so it does not depend on a separate l06 result. This audit used
 repository metadata and existing aggregate outputs; it did not run repository
 code.
+
+## September–December 2026 editorial evidence
+
+The requested 2026-09-09 through 2026-12-02 ledger range contains ten
+unassigned dates and three excluded proposals (l09, l10 and l11); none has an
+execution or publication date. A read-only check on 2026-11-27 found
+online-changes main at `2859cb40d9a120a86eb12d7c1407cd2f80c66c01`. Its OULAD
+tree contains the descriptive analysis and aggregate outputs, but no
+prediction baseline or split-sensitivity result. The OULAD files concern
+2013B–2014J presentations; presentation-relative cutoffs and evaluation
+splits for l09/l10 remain to be defined before any predictive analysis.
+
+The same repository snapshot contains
+`online_learning_course_consumption_dataset.csv` (blob
+`e322129ca2435c886e7eb86cf4e2bd8174796b63`, 32,730 bytes) and
+`learningWebsites.ipynb` (blob
+`87a3080ae78f69b7d61fbb9aec35d80c1cb8a2a1`, 76,145 bytes). The file paths'
+latest public commits are `d013a5839deafd6f87c9a3adbe93e0b9f3adebac`
+(CSV, 2025-12-30T01:14:14Z) and
+`bcf57714d6b64454c1701d7b214913b765fda522` (notebook,
+2025-12-30T01:12:43Z). These repository commit dates are not observation or
+execution dates. Existing Kaggle metadata identifies version 1 modified
+2025-12-13 and a linked notebook published 2025-12-26; it does not establish
+the local CSV's exact identity or collection methodology. No l11 analysis or
+result is evidenced. The source CSV remains learner-level and is not included
+in the site. No `studentVle.csv` or repository code was accessed or executed.

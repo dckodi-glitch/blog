@@ -41,6 +41,11 @@ separate milestone. Its join and missing-score checks overlap the l01
 retrospective, while l07 separately summarizes submission timing. No distinct
 l06 analysis or publication is claimed.
 
+The l09 baseline, l10 split-sensitivity, and l11 platform-provenance milestones
+remain excluded proposals. No predictive model, evaluation result, or platform
+ranking is claimed; the platform dataset's collection method and exact source
+identity remain unverified.
+
 ## Status
 
 Published entries will identify their observation window, limits and exact
